@@ -87,10 +87,10 @@
 		DA36365622006E4E00424B55 = {
 			isa = PBXGroup;
 			children = (
-				DA3636D72200708800424B55 /* Frameworks */,
 				DA36366122006E4E00424B55 /* FlowControllerExample */,
 				DA36367622006E4F00424B55 /* FlowControllerExampleTests */,
 				DA36366022006E4E00424B55 /* Products */,
+				DA3636D72200708800424B55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
