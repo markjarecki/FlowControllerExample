@@ -8,10 +8,8 @@
 
 import UIKit
 
-public protocol FirstSceneToSecondSceneFlow: class {
+public protocol MainFlows: class {
 
-    associatedtype SenderType: UIViewController
-
-    func flowFirstSceneToSecondScene(sender: SenderType, content: Colours)
+    func flowFirstSceneToSecondScene(sender: UIViewController, content: Colours)
 
 }

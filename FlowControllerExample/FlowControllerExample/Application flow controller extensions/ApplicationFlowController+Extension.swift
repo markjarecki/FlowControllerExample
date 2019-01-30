@@ -9,7 +9,7 @@
 import Flows
 import RedViewModuleFramework
 
-extension ApplicationFlowController: FirstSceneToSecondSceneFlow {
+extension ApplicationFlowController: MainFlows {
 
     typealias SenderType = RedViewController
 

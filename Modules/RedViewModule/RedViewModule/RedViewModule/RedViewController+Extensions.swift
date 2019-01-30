@@ -9,15 +9,13 @@
 import UIKit
 import Flows
 
-extension RedViewControllerGesturesHandleable where Self: RedViewController<MockFlowDelegate> {
+extension RedViewController: RedViewControllerGesturesHandleable{
 
     public func _handleTap(tap: UITapGestureRecognizer) {
-        
-        print("DUDE")
-        
+                
         if tap.state == .ended {
         
-            self.flowDelegate?.flowFirstSceneToSecondScene(sender: self, content: Colours(name: "Green"))
+            self.flowDelegate.flowFirstSceneToSecondScene(sender: self, content: Colours(name: "Green"))
         
         }
     

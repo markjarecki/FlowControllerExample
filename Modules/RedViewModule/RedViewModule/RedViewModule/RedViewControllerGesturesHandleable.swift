@@ -13,13 +13,3 @@ public protocol RedViewControllerGesturesHandleable: class {
     func _handleTap(tap: UITapGestureRecognizer)
 
 }
-
-extension RedViewControllerGesturesHandleable {
-
-    public func _handleTap(tap: UITapGestureRecognizer) {
-    
-        print("FLOORSOME")
-    
-    }
-
-}

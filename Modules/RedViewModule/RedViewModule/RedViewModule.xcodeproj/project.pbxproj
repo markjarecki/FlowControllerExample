@@ -24,7 +24,7 @@
 		DA36373722007DB300424B55 /* FlowControllerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36373222007D8D00424B55 /* FlowControllerCore.framework */; };
 		DAB3E6D12201F59F00CE6E3A /* RedViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E6D02201F59F00CE6E3A /* RedViewController+Extensions.swift */; };
 		DAB3E6D32201F83900CE6E3A /* RedViewControllerGesturesHandleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E6D22201F83900CE6E3A /* RedViewControllerGesturesHandleable.swift */; };
-		DAB3E6D52201F97600CE6E3A /* MockFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E6D42201F97600CE6E3A /* MockFlowDelegate.swift */; };
+		DAB3E6D52201F97600CE6E3A /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E6D42201F97600CE6E3A /* FlowController.swift */; };
 		DAB3E6D62201FA2D00CE6E3A /* RedViewControllerGesturesHandleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E6D22201F83900CE6E3A /* RedViewControllerGesturesHandleable.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +87,7 @@
 		DA36373222007D8D00424B55 /* FlowControllerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowControllerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E6D02201F59F00CE6E3A /* RedViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RedViewController+Extensions.swift"; sourceTree = "<group>"; };
 		DAB3E6D22201F83900CE6E3A /* RedViewControllerGesturesHandleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewControllerGesturesHandleable.swift; sourceTree = "<group>"; };
-		DAB3E6D42201F97600CE6E3A /* MockFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlowDelegate.swift; sourceTree = "<group>"; };
+		DAB3E6D42201F97600CE6E3A /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,7 @@
 				DA3636ED2200783700424B55 /* RedViewController.swift */,
 				DAB3E6D22201F83900CE6E3A /* RedViewControllerGesturesHandleable.swift */,
 				DA3636EB2200783700424B55 /* AppDelegate.swift */,
-				DAB3E6D42201F97600CE6E3A /* MockFlowDelegate.swift */,
+				DAB3E6D42201F97600CE6E3A /* FlowController.swift */,
 				DAB3E6D02201F59F00CE6E3A /* RedViewController+Extensions.swift */,
 				DA3636F22200783700424B55 /* Assets.xcassets */,
 				DA3636F42200783700424B55 /* LaunchScreen.storyboard */,
@@ -374,7 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB3E6D32201F83900CE6E3A /* RedViewControllerGesturesHandleable.swift in Sources */,
-				DAB3E6D52201F97600CE6E3A /* MockFlowDelegate.swift in Sources */,
+				DAB3E6D52201F97600CE6E3A /* FlowController.swift in Sources */,
 				DAB3E6D12201F59F00CE6E3A /* RedViewController+Extensions.swift in Sources */,
 				DA3636EE2200783700424B55 /* RedViewController.swift in Sources */,
 				DA3636EC2200783700424B55 /* AppDelegate.swift in Sources */,

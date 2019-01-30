@@ -16,8 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        let flowController = FlowController()
+        let viewController = RedViewController(flowDelegate: flowController)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = RedViewController<MockFlowDelegate>()
+        window?.rootViewController = viewController
         window?.makeKeyAndVisible()
         
         return true

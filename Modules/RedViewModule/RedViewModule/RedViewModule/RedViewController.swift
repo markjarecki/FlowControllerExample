@@ -9,11 +9,11 @@
 import UIKit
 import Flows
 
-public class RedViewController<FlowDelegateType: FirstSceneToSecondSceneFlow>: UIViewController {
+public class RedViewController: UIViewController {
     
     // MARK: - Properties
     
-    public var flowDelegate: FlowDelegateType?
+    public let flowDelegate: MainFlows
     
     // MARK: - Gesture recognisers
     
@@ -21,8 +21,10 @@ public class RedViewController<FlowDelegateType: FirstSceneToSecondSceneFlow>: U
     
     // MARK: - Initialisers
     
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    public init(flowDelegate: MainFlows) {
     
+        self.flowDelegate = flowDelegate
+        
         super.init(nibName: nil, bundle: nil)
     
     }
@@ -48,13 +50,9 @@ public class RedViewController<FlowDelegateType: FirstSceneToSecondSceneFlow>: U
     // MARK: - Gesture recogniser handlers
     
     @objc public func handleTap(tap: UITapGestureRecognizer) {
-    
-        print("AWESOME")
-        
+            
         _handleTap(tap: tap)
     
     }
     
 }
-
-extension RedViewController: RedViewControllerGesturesHandleable {}
