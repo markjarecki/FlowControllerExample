@@ -9,7 +9,7 @@
 import UIKit
 import Flows
 
-extension RedViewController: RedViewControllerGesturesHandleable where FlowDelegateType == MockFlowDelegate {
+extension RedViewControllerGesturesHandleable where Self: RedViewController<MockFlowDelegate> {
 
     public func _handleTap(tap: UITapGestureRecognizer) {
         

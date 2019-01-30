@@ -9,7 +9,7 @@
 import UIKit
 import Flows
 
-public class RedViewController<FlowDelegateType: FirstSceneToSecondSceneFlow>: UIViewController, RedViewControllerGesturesHandleable {
+public class RedViewController<FlowDelegateType: FirstSceneToSecondSceneFlow>: UIViewController {
     
     // MARK: - Properties
     
@@ -56,3 +56,5 @@ public class RedViewController<FlowDelegateType: FirstSceneToSecondSceneFlow>: U
     }
     
 }
+
+extension RedViewController: RedViewControllerGesturesHandleable {}
