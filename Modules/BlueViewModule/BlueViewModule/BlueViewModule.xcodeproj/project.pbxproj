@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA35FACA2201EE8100AFAEAB /* Flows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FAC82201EE7D00AFAEAB /* Flows.framework */; };
+		DA35FACB2201EE8100AFAEAB /* Flows.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FAC82201EE7D00AFAEAB /* Flows.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA35FACE2201EEBF00AFAEAB /* Flows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FAC82201EE7D00AFAEAB /* Flows.framework */; };
 		DA36374A2200859F00424B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3637492200859F00424B55 /* AppDelegate.swift */; };
 		DA36374C2200859F00424B55 /* BlueViewController..swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36374B2200859F00424B55 /* BlueViewController..swift */; };
 		DA3637512200859F00424B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3637502200859F00424B55 /* Assets.xcassets */; };
@@ -45,6 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DA35FACB2201EE8100AFAEAB /* Flows.framework in Embed Frameworks */,
 				DA36378E2200873000424B55 /* FlowControllerCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -53,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA35FAC82201EE7D00AFAEAB /* Flows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Flows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3637462200859F00424B55 /* BlueViewModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueViewModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3637492200859F00424B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA36374B2200859F00424B55 /* BlueViewController..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController..swift; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA36378D2200873000424B55 /* FlowControllerCore.framework in Frameworks */,
+				DA35FACA2201EE8100AFAEAB /* Flows.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3637902200873A00424B55 /* FlowControllerCore.framework in Frameworks */,
+				DA35FACE2201EEBF00AFAEAB /* Flows.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +178,7 @@
 		DA36378A2200872800424B55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA35FAC82201EE7D00AFAEAB /* Flows.framework */,
 				DA36378B2200872800424B55 /* FlowControllerCore.framework */,
 			);
 			name = Frameworks;

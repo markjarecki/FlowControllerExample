@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA35FABF2201EC1300AFAEAB /* Flows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FABD2201EC0100AFAEAB /* Flows.framework */; };
+		DA35FAC02201EC1300AFAEAB /* Flows.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FABD2201EC0100AFAEAB /* Flows.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA35FAC32201EC6A00AFAEAB /* Flows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FABD2201EC0100AFAEAB /* Flows.framework */; };
 		DA3636EC2200783700424B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3636EB2200783700424B55 /* AppDelegate.swift */; };
 		DA3636EE2200783700424B55 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3636ED2200783700424B55 /* RedViewController.swift */; };
 		DA3636F32200783700424B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3636F22200783700424B55 /* Assets.xcassets */; };
@@ -54,6 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DA35FAC02201EC1300AFAEAB /* Flows.framework in Embed Frameworks */,
 				DA36373522007DA900424B55 /* FlowControllerCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -62,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA35FABD2201EC0100AFAEAB /* Flows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Flows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3636E82200783700424B55 /* RedViewModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedViewModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3636EB2200783700424B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA3636ED2200783700424B55 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA36373422007DA900424B55 /* FlowControllerCore.framework in Frameworks */,
+				DA35FABF2201EC1300AFAEAB /* Flows.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA36373722007DB300424B55 /* FlowControllerCore.framework in Frameworks */,
+				DA35FAC32201EC6A00AFAEAB /* Flows.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +189,7 @@
 		DA36373122007D5200424B55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA35FABD2201EC0100AFAEAB /* Flows.framework */,
 				DA36373222007D8D00424B55 /* FlowControllerCore.framework */,
 			);
 			name = Frameworks;
