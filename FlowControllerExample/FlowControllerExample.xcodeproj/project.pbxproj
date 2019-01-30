@@ -20,7 +20,7 @@
 		DA36373B2200804800424B55 /* RedViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637382200803600424B55 /* RedViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA3637A722008A7D00424B55 /* BlueViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */; };
 		DA3637A822008A7D00424B55 /* BlueViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA69EAA52200A7CE0060AD66 /* RedViewControllerDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69EAA42200A7CE0060AD66 /* RedViewControllerDelegateExtension.swift */; };
+		DAB3E6CE2201F2FA00CE6E3A /* ApplicationFlowController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E6CD2201F2FA00CE6E3A /* ApplicationFlowController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 		DA3636D8220073A700424B55 /* FlowControllerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowControllerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3637382200803600424B55 /* RedViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlueViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA69EAA42200A7CE0060AD66 /* RedViewControllerDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewControllerDelegateExtension.swift; sourceTree = "<group>"; };
+		DAB3E6CD2201F2FA00CE6E3A /* ApplicationFlowController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationFlowController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 			children = (
 				DA36366222006E4E00424B55 /* AppDelegate.swift */,
 				DA36366422006E4E00424B55 /* ApplicationFlowController.swift */,
-				DA69EAA32200A7AC0060AD66 /* ApplicationFlowControllerDelegateExtensions */,
+				DAB3E6CF2201F30200CE6E3A /* Application flow controller extensions */,
 				DA36366922006E4F00424B55 /* Assets.xcassets */,
 				DA36366B22006E4F00424B55 /* LaunchScreen.storyboard */,
 				DA36366E22006E4F00424B55 /* Info.plist */,
@@ -141,12 +141,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA69EAA32200A7AC0060AD66 /* ApplicationFlowControllerDelegateExtensions */ = {
+		DAB3E6CF2201F30200CE6E3A /* Application flow controller extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DA69EAA42200A7CE0060AD66 /* RedViewControllerDelegateExtension.swift */,
+				DAB3E6CD2201F2FA00CE6E3A /* ApplicationFlowController+Extension.swift */,
 			);
-			path = ApplicationFlowControllerDelegateExtensions;
+			path = "Application flow controller extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB3E6CE2201F2FA00CE6E3A /* ApplicationFlowController+Extension.swift in Sources */,
 				DA36366522006E4E00424B55 /* ApplicationFlowController.swift in Sources */,
 				DA36366322006E4E00424B55 /* AppDelegate.swift in Sources */,
-				DA69EAA52200A7CE0060AD66 /* RedViewControllerDelegateExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

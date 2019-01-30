@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Flows
 
-public class RedViewController: UIViewController {
+public class RedViewController<FlowDelegateType: FirstSceneToSecondSceneFlow>: UIViewController, RedViewControllerGesturesHandleable {
     
     // MARK: - Properties
     
-    public var delegate: RedViewControllerDelegate?
+    public var flowDelegate: FlowDelegateType?
+    
+    // MARK: - Gesture recognisers
+    
+    public let tapGesture = UITapGestureRecognizer()
     
     // MARK: - Initialisers
     
@@ -26,14 +31,28 @@ public class RedViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - View lifecycle overrides
+   // MARK: - View lifecycle overrides
     
     override public func viewDidLoad() {
+    
         super.viewDidLoad()
         
         view.backgroundColor = .red
         
+        // Set the gesture recognizer
+        tapGesture.addTarget(self, action: #selector(handleTap(tap:)))
+        view.addGestureRecognizer(tapGesture)
+        
+    }
+
+    // MARK: - Gesture recogniser handlers
+    
+    @objc public func handleTap(tap: UITapGestureRecognizer) {
+    
+        print("AWESOME")
+        
+        _handleTap(tap: tap)
+    
     }
     
 }
-

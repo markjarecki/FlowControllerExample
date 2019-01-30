@@ -7,7 +7,6 @@
 //
 
 import FlowControllerCore
-import Flows
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,9 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        print(Colours(name: "Green"))
-        
+                
         let navigationController = UINavigationController()
         navigationController.isToolbarHidden = true
         navigationController.isNavigationBarHidden = true

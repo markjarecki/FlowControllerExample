@@ -21,9 +21,9 @@ class ApplicationFlowController: FlowController {
     
         self.navigationController = navigationController
         
-        let rootController = RedViewController()
+        let rootController = RedViewController<ApplicationFlowController>()
         
-        rootController.delegate = self
+        rootController.flowDelegate = self
         
         navigationController.show(rootController, sender: nil)
     

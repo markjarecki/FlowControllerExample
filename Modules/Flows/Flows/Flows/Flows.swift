@@ -12,6 +12,6 @@ public protocol FirstSceneToSecondSceneFlow: class {
 
     associatedtype SenderType: UIViewController
 
-    func flowFirstSceneToSecondScene(sender: SenderType)
+    func flowFirstSceneToSecondScene(sender: SenderType, content: Colours)
 
 }
