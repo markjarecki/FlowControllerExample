@@ -7,7 +7,7 @@
 //
 
 import FlowControllerCore
-import RedViewModuleFramework
+import HomeSceneFramework
 
 class ApplicationFlowController: FlowController {
 
@@ -21,9 +21,7 @@ class ApplicationFlowController: FlowController {
     
         self.navigationController = navigationController
         
-        let rootController = RedViewController<ApplicationFlowController>()
-        
-        rootController.flowDelegate = self
+        let rootController = HomeScene()
         
         navigationController.show(rootController, sender: nil)
     
