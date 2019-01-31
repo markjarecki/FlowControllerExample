@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA35FACA2201EE8100AFAEAB /* Flows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FAC82201EE7D00AFAEAB /* Flows.framework */; };
-		DA35FACB2201EE8100AFAEAB /* Flows.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FAC82201EE7D00AFAEAB /* Flows.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA35FACE2201EEBF00AFAEAB /* Flows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FAC82201EE7D00AFAEAB /* Flows.framework */; };
 		DA36374A2200859F00424B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3637492200859F00424B55 /* AppDelegate.swift */; };
-		DA36374C2200859F00424B55 /* BlueViewController..swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36374B2200859F00424B55 /* BlueViewController..swift */; };
 		DA3637512200859F00424B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3637502200859F00424B55 /* Assets.xcassets */; };
 		DA3637542200859F00424B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3637522200859F00424B55 /* LaunchScreen.storyboard */; };
 		DA36375F2200859F00424B55 /* BlueViewModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36375E2200859F00424B55 /* BlueViewModuleTests.swift */; };
 		DA3637772200862600424B55 /* BlueViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36376E2200862600424B55 /* BlueViewModuleFramework.framework */; };
 		DA36377C2200862600424B55 /* BlueViewModuleFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36377B2200862600424B55 /* BlueViewModuleFrameworkTests.swift */; };
 		DA36377E2200862600424B55 /* BlueViewModuleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3637702200862600424B55 /* BlueViewModuleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA3637852200864600424B55 /* BlueViewController..swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36374B2200859F00424B55 /* BlueViewController..swift */; };
-		DA36378D2200873000424B55 /* FlowControllerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36378B2200872800424B55 /* FlowControllerCore.framework */; };
-		DA36378E2200873000424B55 /* FlowControllerCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA36378B2200872800424B55 /* FlowControllerCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA3637902200873A00424B55 /* FlowControllerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36378B2200872800424B55 /* FlowControllerCore.framework */; };
+		DAB3E74E22030B7000CE6E3A /* BlueViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36376E2200862600424B55 /* BlueViewModuleFramework.framework */; };
+		DAB3E74F22030B7000CE6E3A /* BlueViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA36376E2200862600424B55 /* BlueViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAB3E75A22030C6400CE6E3A /* BlueViewController..swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36374B2200859F00424B55 /* BlueViewController..swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,17 +34,23 @@
 			remoteGlobalIDString = DA36376D2200862600424B55;
 			remoteInfo = BlueViewModuleFramework;
 		};
+		DAB3E75022030B7000CE6E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA36373E2200859F00424B55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA36376D2200862600424B55;
+			remoteInfo = BlueViewModuleFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DA36378F2200873000424B55 /* Embed Frameworks */ = {
+		DAB3E75222030B7000CE6E3A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DA35FACB2201EE8100AFAEAB /* Flows.framework in Embed Frameworks */,
-				DA36378E2200873000424B55 /* FlowControllerCore.framework in Embed Frameworks */,
+				DAB3E74F22030B7000CE6E3A /* BlueViewModuleFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +58,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DA35FAC82201EE7D00AFAEAB /* Flows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Flows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3637462200859F00424B55 /* BlueViewModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueViewModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3637492200859F00424B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA36374B2200859F00424B55 /* BlueViewController..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController..swift; sourceTree = "<group>"; };
@@ -73,7 +73,6 @@
 		DA3637762200862600424B55 /* BlueViewModuleFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueViewModuleFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA36377B2200862600424B55 /* BlueViewModuleFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewModuleFrameworkTests.swift; sourceTree = "<group>"; };
 		DA36377D2200862600424B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA36378B2200872800424B55 /* FlowControllerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowControllerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA36378D2200873000424B55 /* FlowControllerCore.framework in Frameworks */,
-				DA35FACA2201EE8100AFAEAB /* Flows.framework in Frameworks */,
+				DAB3E74E22030B7000CE6E3A /* BlueViewModuleFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA3637902200873A00424B55 /* FlowControllerCore.framework in Frameworks */,
-				DA35FACE2201EEBF00AFAEAB /* Flows.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				DA3637482200859F00424B55 /* BlueViewModule */,
-				DA36375D2200859F00424B55 /* BlueViewModuleTests */,
 				DA36376F2200862600424B55 /* BlueViewModuleFramework */,
+				DA36375D2200859F00424B55 /* BlueViewModuleTests */,
 				DA36377A2200862600424B55 /* BlueViewModuleFrameworkTests */,
 				DA3637472200859F00424B55 /* Products */,
 				DA36378A2200872800424B55 /* Frameworks */,
@@ -140,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				DA3637492200859F00424B55 /* AppDelegate.swift */,
-				DA36374B2200859F00424B55 /* BlueViewController..swift */,
 				DA3637502200859F00424B55 /* Assets.xcassets */,
 				DA3637522200859F00424B55 /* LaunchScreen.storyboard */,
 				DA3637552200859F00424B55 /* Info.plist */,
@@ -160,6 +155,7 @@
 		DA36376F2200862600424B55 /* BlueViewModuleFramework */ = {
 			isa = PBXGroup;
 			children = (
+				DA36374B2200859F00424B55 /* BlueViewController..swift */,
 				DA3637702200862600424B55 /* BlueViewModuleFramework.h */,
 				DA3637712200862600424B55 /* Info.plist */,
 			);
@@ -178,8 +174,6 @@
 		DA36378A2200872800424B55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA35FAC82201EE7D00AFAEAB /* Flows.framework */,
-				DA36378B2200872800424B55 /* FlowControllerCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,11 +199,12 @@
 				DA3637422200859F00424B55 /* Sources */,
 				DA3637432200859F00424B55 /* Frameworks */,
 				DA3637442200859F00424B55 /* Resources */,
-				DA36378F2200873000424B55 /* Embed Frameworks */,
+				DAB3E75222030B7000CE6E3A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DAB3E75122030B7000CE6E3A /* PBXTargetDependency */,
 			);
 			name = BlueViewModule;
 			productName = BlueViewModule;
@@ -354,7 +349,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA36374C2200859F00424B55 /* BlueViewController..swift in Sources */,
 				DA36374A2200859F00424B55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA3637852200864600424B55 /* BlueViewController..swift in Sources */,
+				DAB3E75A22030C6400CE6E3A /* BlueViewController..swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = DA36376D2200862600424B55 /* BlueViewModuleFramework */;
 			targetProxy = DA3637782200862600424B55 /* PBXContainerItemProxy */;
+		};
+		DAB3E75122030B7000CE6E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA36376D2200862600424B55 /* BlueViewModuleFramework */;
+			targetProxy = DAB3E75022030B7000CE6E3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -529,6 +528,7 @@
 		DA3637642200859F00424B55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2J2MP846S;
@@ -547,6 +547,7 @@
 		DA3637652200859F00424B55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2J2MP846S;

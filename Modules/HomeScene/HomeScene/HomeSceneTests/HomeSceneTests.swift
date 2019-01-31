@@ -1,15 +1,15 @@
 //
-//  FlowsTests.swift
-//  FlowsTests
+//  HomeSceneTests.swift
+//  HomeSceneTests
 //
-//  Created by Mark Jarecki on 30/1/19.
+//  Created by Mark Jarecki on 31/1/19.
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
 import XCTest
-@testable import Flows
+@testable import HomeScene
 
-class FlowsTests: XCTestCase {
+class HomeSceneTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

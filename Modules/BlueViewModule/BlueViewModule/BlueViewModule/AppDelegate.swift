@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FlowControllerCore
+import BlueViewModuleFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

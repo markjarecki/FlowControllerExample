@@ -7,187 +7,184 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA35FA972201EA6200AFAEAB /* Flows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FA8D2201EA6100AFAEAB /* Flows.framework */; };
-		DA35FA9C2201EA6200AFAEAB /* FlowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35FA9B2201EA6200AFAEAB /* FlowsTests.swift */; };
-		DA35FA9E2201EA6200AFAEAB /* Flows.h in Headers */ = {isa = PBXBuildFile; fileRef = DA35FA902201EA6100AFAEAB /* Flows.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA35FAA82201EA7500AFAEAB /* Flows.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35FAA72201EA7500AFAEAB /* Flows.swift */; };
-		DA35FAAA2201EB0400AFAEAB /* Entites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35FAA92201EB0400AFAEAB /* Entites.swift */; };
+		DAB3E6ED2203078500CE6E3A /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E6E32203078500CE6E3A /* SharedEntities.framework */; };
+		DAB3E6F22203078500CE6E3A /* SharedEntitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E6F12203078500CE6E3A /* SharedEntitiesTests.swift */; };
+		DAB3E6F42203078500CE6E3A /* SharedEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB3E6E62203078500CE6E3A /* SharedEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAB3E700220307B600CE6E3A /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E6FF220307B600CE6E3A /* Colours.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DA35FA982201EA6200AFAEAB /* PBXContainerItemProxy */ = {
+		DAB3E6EE2203078500CE6E3A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DA35FA842201EA6100AFAEAB /* Project object */;
+			containerPortal = DAB3E6DA2203078500CE6E3A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DA35FA8C2201EA6100AFAEAB;
-			remoteInfo = Flows;
+			remoteGlobalIDString = DAB3E6E22203078500CE6E3A;
+			remoteInfo = SharedEntities;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA35FA8D2201EA6100AFAEAB /* Flows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA35FA902201EA6100AFAEAB /* Flows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flows.h; sourceTree = "<group>"; };
-		DA35FA912201EA6100AFAEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA35FA962201EA6200AFAEAB /* FlowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA35FA9B2201EA6200AFAEAB /* FlowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowsTests.swift; sourceTree = "<group>"; };
-		DA35FA9D2201EA6200AFAEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA35FAA72201EA7500AFAEAB /* Flows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flows.swift; sourceTree = "<group>"; };
-		DA35FAA92201EB0400AFAEAB /* Entites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entites.swift; sourceTree = "<group>"; };
+		DAB3E6E32203078500CE6E3A /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB3E6E62203078500CE6E3A /* SharedEntities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedEntities.h; sourceTree = "<group>"; };
+		DAB3E6E72203078500CE6E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB3E6EC2203078500CE6E3A /* SharedEntitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedEntitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB3E6F12203078500CE6E3A /* SharedEntitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedEntitiesTests.swift; sourceTree = "<group>"; };
+		DAB3E6F32203078500CE6E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB3E6FF220307B600CE6E3A /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DA35FA8A2201EA6100AFAEAB /* Frameworks */ = {
+		DAB3E6E02203078500CE6E3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA35FA932201EA6200AFAEAB /* Frameworks */ = {
+		DAB3E6E92203078500CE6E3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA35FA972201EA6200AFAEAB /* Flows.framework in Frameworks */,
+				DAB3E6ED2203078500CE6E3A /* SharedEntities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA35FA832201EA6100AFAEAB = {
+		DAB3E6D92203078500CE6E3A = {
 			isa = PBXGroup;
 			children = (
-				DA35FA8F2201EA6100AFAEAB /* Flows */,
-				DA35FA9A2201EA6200AFAEAB /* FlowsTests */,
-				DA35FA8E2201EA6100AFAEAB /* Products */,
+				DAB3E6E52203078500CE6E3A /* SharedEntities */,
+				DAB3E6F02203078500CE6E3A /* SharedEntitiesTests */,
+				DAB3E6E42203078500CE6E3A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DA35FA8E2201EA6100AFAEAB /* Products */ = {
+		DAB3E6E42203078500CE6E3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA35FA8D2201EA6100AFAEAB /* Flows.framework */,
-				DA35FA962201EA6200AFAEAB /* FlowsTests.xctest */,
+				DAB3E6E32203078500CE6E3A /* SharedEntities.framework */,
+				DAB3E6EC2203078500CE6E3A /* SharedEntitiesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA35FA8F2201EA6100AFAEAB /* Flows */ = {
+		DAB3E6E52203078500CE6E3A /* SharedEntities */ = {
 			isa = PBXGroup;
 			children = (
-				DA35FAA72201EA7500AFAEAB /* Flows.swift */,
-				DA35FAA92201EB0400AFAEAB /* Entites.swift */,
-				DA35FA902201EA6100AFAEAB /* Flows.h */,
-				DA35FA912201EA6100AFAEAB /* Info.plist */,
+				DAB3E6FF220307B600CE6E3A /* Colours.swift */,
+				DAB3E6E62203078500CE6E3A /* SharedEntities.h */,
+				DAB3E6E72203078500CE6E3A /* Info.plist */,
 			);
-			path = Flows;
+			path = SharedEntities;
 			sourceTree = "<group>";
 		};
-		DA35FA9A2201EA6200AFAEAB /* FlowsTests */ = {
+		DAB3E6F02203078500CE6E3A /* SharedEntitiesTests */ = {
 			isa = PBXGroup;
 			children = (
-				DA35FA9B2201EA6200AFAEAB /* FlowsTests.swift */,
-				DA35FA9D2201EA6200AFAEAB /* Info.plist */,
+				DAB3E6F12203078500CE6E3A /* SharedEntitiesTests.swift */,
+				DAB3E6F32203078500CE6E3A /* Info.plist */,
 			);
-			path = FlowsTests;
+			path = SharedEntitiesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DA35FA882201EA6100AFAEAB /* Headers */ = {
+		DAB3E6DE2203078500CE6E3A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA35FA9E2201EA6200AFAEAB /* Flows.h in Headers */,
+				DAB3E6F42203078500CE6E3A /* SharedEntities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DA35FA8C2201EA6100AFAEAB /* Flows */ = {
+		DAB3E6E22203078500CE6E3A /* SharedEntities */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA35FAA12201EA6200AFAEAB /* Build configuration list for PBXNativeTarget "Flows" */;
+			buildConfigurationList = DAB3E6F72203078500CE6E3A /* Build configuration list for PBXNativeTarget "SharedEntities" */;
 			buildPhases = (
-				DA35FA882201EA6100AFAEAB /* Headers */,
-				DA35FA892201EA6100AFAEAB /* Sources */,
-				DA35FA8A2201EA6100AFAEAB /* Frameworks */,
-				DA35FA8B2201EA6100AFAEAB /* Resources */,
+				DAB3E6DE2203078500CE6E3A /* Headers */,
+				DAB3E6DF2203078500CE6E3A /* Sources */,
+				DAB3E6E02203078500CE6E3A /* Frameworks */,
+				DAB3E6E12203078500CE6E3A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Flows;
-			productName = Flows;
-			productReference = DA35FA8D2201EA6100AFAEAB /* Flows.framework */;
+			name = SharedEntities;
+			productName = SharedEntities;
+			productReference = DAB3E6E32203078500CE6E3A /* SharedEntities.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DA35FA952201EA6200AFAEAB /* FlowsTests */ = {
+		DAB3E6EB2203078500CE6E3A /* SharedEntitiesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA35FAA42201EA6200AFAEAB /* Build configuration list for PBXNativeTarget "FlowsTests" */;
+			buildConfigurationList = DAB3E6FA2203078500CE6E3A /* Build configuration list for PBXNativeTarget "SharedEntitiesTests" */;
 			buildPhases = (
-				DA35FA922201EA6200AFAEAB /* Sources */,
-				DA35FA932201EA6200AFAEAB /* Frameworks */,
-				DA35FA942201EA6200AFAEAB /* Resources */,
+				DAB3E6E82203078500CE6E3A /* Sources */,
+				DAB3E6E92203078500CE6E3A /* Frameworks */,
+				DAB3E6EA2203078500CE6E3A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DA35FA992201EA6200AFAEAB /* PBXTargetDependency */,
+				DAB3E6EF2203078500CE6E3A /* PBXTargetDependency */,
 			);
-			name = FlowsTests;
-			productName = FlowsTests;
-			productReference = DA35FA962201EA6200AFAEAB /* FlowsTests.xctest */;
+			name = SharedEntitiesTests;
+			productName = SharedEntitiesTests;
+			productReference = DAB3E6EC2203078500CE6E3A /* SharedEntitiesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DA35FA842201EA6100AFAEAB /* Project object */ = {
+		DAB3E6DA2203078500CE6E3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Mark Jarecki";
 				TargetAttributes = {
-					DA35FA8C2201EA6100AFAEAB = {
+					DAB3E6E22203078500CE6E3A = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
-					DA35FA952201EA6200AFAEAB = {
+					DAB3E6EB2203078500CE6E3A = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = DA35FA872201EA6100AFAEAB /* Build configuration list for PBXProject "Flows" */;
+			buildConfigurationList = DAB3E6DD2203078500CE6E3A /* Build configuration list for PBXProject "SharedEntities" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = DA35FA832201EA6100AFAEAB;
-			productRefGroup = DA35FA8E2201EA6100AFAEAB /* Products */;
+			mainGroup = DAB3E6D92203078500CE6E3A;
+			productRefGroup = DAB3E6E42203078500CE6E3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA35FA8C2201EA6100AFAEAB /* Flows */,
-				DA35FA952201EA6200AFAEAB /* FlowsTests */,
+				DAB3E6E22203078500CE6E3A /* SharedEntities */,
+				DAB3E6EB2203078500CE6E3A /* SharedEntitiesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DA35FA8B2201EA6100AFAEAB /* Resources */ = {
+		DAB3E6E12203078500CE6E3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA35FA942201EA6200AFAEAB /* Resources */ = {
+		DAB3E6EA2203078500CE6E3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -197,35 +194,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DA35FA892201EA6100AFAEAB /* Sources */ = {
+		DAB3E6DF2203078500CE6E3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA35FAAA2201EB0400AFAEAB /* Entites.swift in Sources */,
-				DA35FAA82201EA7500AFAEAB /* Flows.swift in Sources */,
+				DAB3E700220307B600CE6E3A /* Colours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA35FA922201EA6200AFAEAB /* Sources */ = {
+		DAB3E6E82203078500CE6E3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA35FA9C2201EA6200AFAEAB /* FlowsTests.swift in Sources */,
+				DAB3E6F22203078500CE6E3A /* SharedEntitiesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DA35FA992201EA6200AFAEAB /* PBXTargetDependency */ = {
+		DAB3E6EF2203078500CE6E3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA35FA8C2201EA6100AFAEAB /* Flows */;
-			targetProxy = DA35FA982201EA6200AFAEAB /* PBXContainerItemProxy */;
+			target = DAB3E6E22203078500CE6E3A /* SharedEntities */;
+			targetProxy = DAB3E6EE2203078500CE6E3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		DA35FA9F2201EA6200AFAEAB /* Debug */ = {
+		DAB3E6F52203078500CE6E3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +285,7 @@
 			};
 			name = Debug;
 		};
-		DA35FAA02201EA6200AFAEAB /* Release */ = {
+		DAB3E6F62203078500CE6E3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -347,7 +343,7 @@
 			};
 			name = Release;
 		};
-		DA35FAA22201EA6200AFAEAB /* Debug */ = {
+		DAB3E6F82203078500CE6E3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -358,14 +354,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Flows/Info.plist;
+				INFOPLIST_FILE = SharedEntities/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.Flows;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.SharedEntities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -374,7 +370,7 @@
 			};
 			name = Debug;
 		};
-		DA35FAA32201EA6200AFAEAB /* Release */ = {
+		DAB3E6F92203078500CE6E3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -385,14 +381,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Flows/Info.plist;
+				INFOPLIST_FILE = SharedEntities/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.Flows;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.SharedEntities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -400,38 +396,38 @@
 			};
 			name = Release;
 		};
-		DA35FAA52201EA6200AFAEAB /* Debug */ = {
+		DAB3E6FB2203078500CE6E3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2J2MP846S;
-				INFOPLIST_FILE = FlowsTests/Info.plist;
+				INFOPLIST_FILE = SharedEntitiesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.FlowsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.SharedEntitiesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DA35FAA62201EA6200AFAEAB /* Release */ = {
+		DAB3E6FC2203078500CE6E3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2J2MP846S;
-				INFOPLIST_FILE = FlowsTests/Info.plist;
+				INFOPLIST_FILE = SharedEntitiesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.FlowsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.SharedEntitiesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,34 +437,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA35FA872201EA6100AFAEAB /* Build configuration list for PBXProject "Flows" */ = {
+		DAB3E6DD2203078500CE6E3A /* Build configuration list for PBXProject "SharedEntities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA35FA9F2201EA6200AFAEAB /* Debug */,
-				DA35FAA02201EA6200AFAEAB /* Release */,
+				DAB3E6F52203078500CE6E3A /* Debug */,
+				DAB3E6F62203078500CE6E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA35FAA12201EA6200AFAEAB /* Build configuration list for PBXNativeTarget "Flows" */ = {
+		DAB3E6F72203078500CE6E3A /* Build configuration list for PBXNativeTarget "SharedEntities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA35FAA22201EA6200AFAEAB /* Debug */,
-				DA35FAA32201EA6200AFAEAB /* Release */,
+				DAB3E6F82203078500CE6E3A /* Debug */,
+				DAB3E6F92203078500CE6E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA35FAA42201EA6200AFAEAB /* Build configuration list for PBXNativeTarget "FlowsTests" */ = {
+		DAB3E6FA2203078500CE6E3A /* Build configuration list for PBXNativeTarget "SharedEntitiesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA35FAA52201EA6200AFAEAB /* Debug */,
-				DA35FAA62201EA6200AFAEAB /* Release */,
+				DAB3E6FB2203078500CE6E3A /* Debug */,
+				DAB3E6FC2203078500CE6E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DA35FA842201EA6100AFAEAB /* Project object */;
+	rootObject = DAB3E6DA2203078500CE6E3A /* Project object */;
 }
