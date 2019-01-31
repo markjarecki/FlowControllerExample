@@ -22,6 +22,8 @@
 		DAB3E7782203110F00CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E73622030AB000CE6E3A /* HomeSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB3E7E7220318B600CE6E3A /* HomeSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7E6220318B600CE6E3A /* HomeSceneFlowDelegate.swift */; };
 		DAB3E7E922031A1200CE6E3A /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E822031A1200CE6E3A /* SharedEntities.framework */; };
+		DAB3E7F32203246700CE6E3A /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E822031A1200CE6E3A /* SharedEntities.framework */; };
+		DAB3E7F42203246700CE6E3A /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E822031A1200CE6E3A /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DAB3E7F42203246700CE6E3A /* SharedEntities.framework in Embed Frameworks */,
 				DAB3E76C22030EEE00CE6E3A /* RedViewModuleFramework.framework in Embed Frameworks */,
 				DAB3E7782203110F00CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */,
 			);
@@ -89,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB3E7F32203246700CE6E3A /* SharedEntities.framework in Frameworks */,
 				DAB3E76B22030EEE00CE6E3A /* RedViewModuleFramework.framework in Frameworks */,
 				DAB3E7772203110F00CE6E3A /* HomeSceneFramework.framework in Frameworks */,
 			);

@@ -7,16 +7,17 @@
 //
 
 import HomeSceneFramework
+import SecondSceneFramework
 import SharedEntities
 
 extension ApplicationFlowController: HomeSceneFlowDelegate {
 
     public func flow(tapFromHomeScene: HomeScene, content: Colours) -> Void {
     
-        print(content)
-    
+        let secondScene = SecondScene(flowDelegate: self)
+
+        self.navigationController.pushViewController(secondScene, animated: false)
+        
     }
 
 }
-
-
