@@ -4,24 +4,36 @@
    <Group
       location = "container:"
       name = "Dependencies">
-      <FileRef
-         location = "group:Modules/HomeScene/HomeScene/HomeScene.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Modules/SecondScene/SecondScene/SecondScene.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Modules/FlowControllerCore/FlowControllerCore.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Modules/SharedEntities/SharedEntities/SharedEntities.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Modules/RedViewModule/RedViewModule/RedViewModule.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Modules/BlueViewModule/BlueViewModule/BlueViewModule.xcodeproj">
-      </FileRef>
+      <Group
+         location = "container:"
+         name = "Shared">
+         <FileRef
+            location = "group:Modules/FlowControllerCore/FlowControllerCore.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Modules/SharedEntities/SharedEntities/SharedEntities.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "Feature scenes">
+         <FileRef
+            location = "group:Modules/HomeScene/HomeScene/HomeScene.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Modules/SecondScene/SecondScene/SecondScene.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "Base views">
+         <FileRef
+            location = "group:Modules/RedViewModule/RedViewModule/RedViewModule.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Modules/BlueViewModule/BlueViewModule/BlueViewModule.xcodeproj">
+         </FileRef>
+      </Group>
    </Group>
    <FileRef
       location = "group:FlowControllerExample/FlowControllerExample.xcodeproj">
