@@ -1,27 +1,28 @@
 //
 //  AppDelegate.swift
-//  RedViewModule
+//  HomeScene
 //
-//  Created by Mark Jarecki on 29/1/19.
+//  Created by Mark Jarecki on 31/1/19.
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
 import UIKit
-import RedViewModuleFramework
+import HomeSceneFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = RedViewController()
+        window?.rootViewController = HomeScene()
         window?.makeKeyAndVisible()
-        
+
         return true
-        
+
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

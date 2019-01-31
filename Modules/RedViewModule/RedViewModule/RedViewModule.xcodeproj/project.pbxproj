@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DA3636EC2200783700424B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3636EB2200783700424B55 /* AppDelegate.swift */; };
-		DA3636EE2200783700424B55 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3636ED2200783700424B55 /* RedViewController.swift */; };
 		DA3636F32200783700424B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3636F22200783700424B55 /* Assets.xcassets */; };
 		DA3636F62200783700424B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3636F42200783700424B55 /* LaunchScreen.storyboard */; };
 		DA3637012200783700424B55 /* RedViewModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3637002200783700424B55 /* RedViewModuleTests.swift */; };
@@ -16,11 +15,8 @@
 		DA363720220078C500424B55 /* RedViewModuleFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36371F220078C500424B55 /* RedViewModuleFrameworkTests.swift */; };
 		DA363722220078C500424B55 /* RedViewModuleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DA363712220078C500424B55 /* RedViewModuleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA36372E2200796400424B55 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3636ED2200783700424B55 /* RedViewController.swift */; };
-		DA36373422007DA900424B55 /* FlowControllerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36373222007D8D00424B55 /* FlowControllerCore.framework */; };
-		DA36373522007DA900424B55 /* FlowControllerCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA36373222007D8D00424B55 /* FlowControllerCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA36373722007DB300424B55 /* FlowControllerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36373222007D8D00424B55 /* FlowControllerCore.framework */; };
-		DA69EAA12200A7130060AD66 /* RedViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69EAA02200A7130060AD66 /* RedViewControllerDelegate.swift */; };
-		DA69EAA22200A7130060AD66 /* RedViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69EAA02200A7130060AD66 /* RedViewControllerDelegate.swift */; };
+		DAB3E75522030B8C00CE6E3A /* RedViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA363710220078C400424B55 /* RedViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAB3E75922030B9000CE6E3A /* RedViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA363710220078C400424B55 /* RedViewModuleFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,16 +41,23 @@
 			remoteGlobalIDString = DA3636E72200783700424B55;
 			remoteInfo = RedViewModule;
 		};
+		DAB3E75622030B8C00CE6E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA3636E02200783700424B55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA36370F220078C400424B55;
+			remoteInfo = RedViewModuleFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DA36373622007DA900424B55 /* Embed Frameworks */ = {
+		DAB3E75822030B8C00CE6E3A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DA36373522007DA900424B55 /* FlowControllerCore.framework in Embed Frameworks */,
+				DAB3E75522030B8C00CE6E3A /* RedViewModuleFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,8 +80,6 @@
 		DA363718220078C500424B55 /* RedViewModuleFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedViewModuleFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA36371F220078C500424B55 /* RedViewModuleFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewModuleFrameworkTests.swift; sourceTree = "<group>"; };
 		DA363721220078C500424B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA36373222007D8D00424B55 /* FlowControllerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowControllerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA69EAA02200A7130060AD66 /* RedViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA36373422007DA900424B55 /* FlowControllerCore.framework in Frameworks */,
+				DAB3E75922030B9000CE6E3A /* RedViewModuleFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA36373722007DB300424B55 /* FlowControllerCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,8 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				DA3636EA2200783700424B55 /* RedViewModule */,
-				DA3636FF2200783700424B55 /* RedViewModuleTests */,
 				DA363711220078C500424B55 /* RedViewModuleFramework */,
+				DA3636FF2200783700424B55 /* RedViewModuleTests */,
 				DA36371E220078C500424B55 /* RedViewModuleFrameworkTests */,
 				DA3636E92200783700424B55 /* Products */,
 				DA36373122007D5200424B55 /* Frameworks */,
@@ -143,8 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				DA3636EB2200783700424B55 /* AppDelegate.swift */,
-				DA3636ED2200783700424B55 /* RedViewController.swift */,
-				DA69EAA02200A7130060AD66 /* RedViewControllerDelegate.swift */,
 				DA3636F22200783700424B55 /* Assets.xcassets */,
 				DA3636F42200783700424B55 /* LaunchScreen.storyboard */,
 				DA3636F72200783700424B55 /* Info.plist */,
@@ -164,6 +162,7 @@
 		DA363711220078C500424B55 /* RedViewModuleFramework */ = {
 			isa = PBXGroup;
 			children = (
+				DA3636ED2200783700424B55 /* RedViewController.swift */,
 				DA363712220078C500424B55 /* RedViewModuleFramework.h */,
 				DA363713220078C500424B55 /* Info.plist */,
 			);
@@ -182,7 +181,6 @@
 		DA36373122007D5200424B55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA36373222007D8D00424B55 /* FlowControllerCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,11 +206,12 @@
 				DA3636E42200783700424B55 /* Sources */,
 				DA3636E52200783700424B55 /* Frameworks */,
 				DA3636E62200783700424B55 /* Resources */,
-				DA36373622007DA900424B55 /* Embed Frameworks */,
+				DAB3E75822030B8C00CE6E3A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DAB3E75722030B8C00CE6E3A /* PBXTargetDependency */,
 			);
 			name = RedViewModule;
 			productName = RedViewModule;
@@ -359,8 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA3636EE2200783700424B55 /* RedViewController.swift in Sources */,
-				DA69EAA12200A7130060AD66 /* RedViewControllerDelegate.swift in Sources */,
 				DA3636EC2200783700424B55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +375,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA36372E2200796400424B55 /* RedViewController.swift in Sources */,
-				DA69EAA22200A7130060AD66 /* RedViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +403,11 @@
 			isa = PBXTargetDependency;
 			target = DA3636E72200783700424B55 /* RedViewModule */;
 			targetProxy = DA36371C220078C500424B55 /* PBXContainerItemProxy */;
+		};
+		DAB3E75722030B8C00CE6E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA36370F220078C400424B55 /* RedViewModuleFramework */;
+			targetProxy = DAB3E75622030B8C00CE6E3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -541,6 +542,7 @@
 		DA3637062200783700424B55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2J2MP846S;
@@ -559,6 +561,7 @@
 		DA3637072200783700424B55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2J2MP846S;

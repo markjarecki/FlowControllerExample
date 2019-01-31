@@ -18,7 +18,12 @@
 		DA36373B2200804800424B55 /* RedViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637382200803600424B55 /* RedViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA3637A722008A7D00424B55 /* BlueViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */; };
 		DA3637A822008A7D00424B55 /* BlueViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA69EAA52200A7CE0060AD66 /* RedViewControllerDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69EAA42200A7CE0060AD66 /* RedViewControllerDelegateExtension.swift */; };
+		DAB3E703220308B600CE6E3A /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E701220308B200CE6E3A /* SharedEntities.framework */; };
+		DAB3E704220308B600CE6E3A /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E701220308B200CE6E3A /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAB3E77322030F4900CE6E3A /* HomeSceneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */; };
+		DAB3E77422030F4900CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAB3E7E32203150000CE6E3A /* SecondSceneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */; };
+		DAB3E7E42203150000CE6E3A /* SecondSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DAB3E77422030F4900CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */,
+				DAB3E704220308B600CE6E3A /* SharedEntities.framework in Embed Frameworks */,
+				DAB3E7E42203150000CE6E3A /* SecondSceneFramework.framework in Embed Frameworks */,
 				DA3637A822008A7D00424B55 /* BlueViewModuleFramework.framework in Embed Frameworks */,
 				DA36373B2200804800424B55 /* RedViewModuleFramework.framework in Embed Frameworks */,
 				DA3636DB2200754D00424B55 /* FlowControllerCore.framework in Embed Frameworks */,
@@ -60,7 +68,9 @@
 		DA3636D8220073A700424B55 /* FlowControllerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowControllerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3637382200803600424B55 /* RedViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlueViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA69EAA42200A7CE0060AD66 /* RedViewControllerDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewControllerDelegateExtension.swift; sourceTree = "<group>"; };
+		DAB3E701220308B200CE6E3A /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeSceneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecondSceneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +79,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3637A722008A7D00424B55 /* BlueViewModuleFramework.framework in Frameworks */,
+				DAB3E7E32203150000CE6E3A /* SecondSceneFramework.framework in Frameworks */,
 				DA3636DA2200754D00424B55 /* FlowControllerCore.framework in Frameworks */,
+				DAB3E77322030F4900CE6E3A /* HomeSceneFramework.framework in Frameworks */,
+				DAB3E703220308B600CE6E3A /* SharedEntities.framework in Frameworks */,
 				DA36373A2200804800424B55 /* RedViewModuleFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,10 +100,10 @@
 		DA36365622006E4E00424B55 = {
 			isa = PBXGroup;
 			children = (
-				DA3636D72200708800424B55 /* Frameworks */,
 				DA36366122006E4E00424B55 /* FlowControllerExample */,
 				DA36367622006E4F00424B55 /* FlowControllerExampleTests */,
 				DA36366022006E4E00424B55 /* Products */,
+				DA3636D72200708800424B55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +121,7 @@
 			children = (
 				DA36366222006E4E00424B55 /* AppDelegate.swift */,
 				DA36366422006E4E00424B55 /* ApplicationFlowController.swift */,
-				DA69EAA32200A7AC0060AD66 /* ApplicationFlowControllerDelegateExtensions */,
+				DAB3E77B2203136E00CE6E3A /* Flow controller extensions */,
 				DA36366922006E4F00424B55 /* Assets.xcassets */,
 				DA36366B22006E4F00424B55 /* LaunchScreen.storyboard */,
 				DA36366E22006E4F00424B55 /* Info.plist */,
@@ -128,19 +141,21 @@
 		DA3636D72200708800424B55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */,
+				DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */,
+				DAB3E701220308B200CE6E3A /* SharedEntities.framework */,
+				DA3636D8220073A700424B55 /* FlowControllerCore.framework */,
 				DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */,
 				DA3637382200803600424B55 /* RedViewModuleFramework.framework */,
-				DA3636D8220073A700424B55 /* FlowControllerCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA69EAA32200A7AC0060AD66 /* ApplicationFlowControllerDelegateExtensions */ = {
+		DAB3E77B2203136E00CE6E3A /* Flow controller extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DA69EAA42200A7CE0060AD66 /* RedViewControllerDelegateExtension.swift */,
 			);
-			path = ApplicationFlowControllerDelegateExtensions;
+			path = "Flow controller extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +261,6 @@
 			files = (
 				DA36366522006E4E00424B55 /* ApplicationFlowController.swift in Sources */,
 				DA36366322006E4E00424B55 /* AppDelegate.swift in Sources */,
-				DA69EAA52200A7CE0060AD66 /* RedViewControllerDelegateExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

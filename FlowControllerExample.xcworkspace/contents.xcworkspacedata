@@ -5,7 +5,16 @@
       location = "container:"
       name = "Dependencies">
       <FileRef
+         location = "group:Modules/HomeScene/HomeScene/HomeScene.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Modules/SecondScene/SecondScene/SecondScene.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Modules/FlowControllerCore/FlowControllerCore.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Modules/SharedEntities/SharedEntities/SharedEntities.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:Modules/RedViewModule/RedViewModule/RedViewModule.xcodeproj">
