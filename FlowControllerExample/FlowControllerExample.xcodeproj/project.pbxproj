@@ -24,6 +24,7 @@
 		DAB3E77422030F4900CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB3E7E32203150000CE6E3A /* SecondSceneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */; };
 		DAB3E7E42203150000CE6E3A /* SecondSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAB3E7EB2203205900CE6E3A /* HomeSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		DAB3E701220308B200CE6E3A /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeSceneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecondSceneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneFlowDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		DAB3E77B2203136E00CE6E3A /* Flow controller extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate.swift */,
 			);
 			path = "Flow controller extensions";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				DA36366522006E4E00424B55 /* ApplicationFlowController.swift in Sources */,
 				DA36366322006E4E00424B55 /* AppDelegate.swift in Sources */,
+				DAB3E7EB2203205900CE6E3A /* HomeSceneFlowDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
