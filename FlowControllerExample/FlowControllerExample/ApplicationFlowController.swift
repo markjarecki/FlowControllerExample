@@ -21,7 +21,7 @@ class ApplicationFlowController: FlowController {
     
         self.navigationController = navigationController
         
-        let rootController = HomeScene()
+        let rootController = HomeScene(flowDelegate: self)
         
         navigationController.show(rootController, sender: nil)
     

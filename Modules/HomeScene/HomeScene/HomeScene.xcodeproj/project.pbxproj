@@ -20,6 +20,10 @@
 		DAB3E77622030F8300CE6E3A /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E77522030F8300CE6E3A /* HomeScene.swift */; };
 		DAB3E7772203110F00CE6E3A /* HomeSceneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E73622030AB000CE6E3A /* HomeSceneFramework.framework */; };
 		DAB3E7782203110F00CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E73622030AB000CE6E3A /* HomeSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAB3E7E7220318B600CE6E3A /* HomeSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7E6220318B600CE6E3A /* HomeSceneFlowDelegate.swift */; };
+		DAB3E7E922031A1200CE6E3A /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E822031A1200CE6E3A /* SharedEntities.framework */; };
+		DAB3E7F32203246700CE6E3A /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E822031A1200CE6E3A /* SharedEntities.framework */; };
+		DAB3E7F42203246700CE6E3A /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E822031A1200CE6E3A /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DAB3E7F42203246700CE6E3A /* SharedEntities.framework in Embed Frameworks */,
 				DAB3E76C22030EEE00CE6E3A /* RedViewModuleFramework.framework in Embed Frameworks */,
 				DAB3E7782203110F00CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */,
 			);
@@ -78,6 +83,8 @@
 		DAB3E74522030AB000CE6E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB3E76922030EE900CE6E3A /* RedViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E77522030F8300CE6E3A /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
+		DAB3E7E6220318B600CE6E3A /* HomeSceneFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneFlowDelegate.swift; sourceTree = "<group>"; };
+		DAB3E7E822031A1200CE6E3A /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB3E7F32203246700CE6E3A /* SharedEntities.framework in Frameworks */,
 				DAB3E76B22030EEE00CE6E3A /* RedViewModuleFramework.framework in Frameworks */,
 				DAB3E7772203110F00CE6E3A /* HomeSceneFramework.framework in Frameworks */,
 			);
@@ -101,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB3E7E922031A1200CE6E3A /* SharedEntities.framework in Frameworks */,
 				DAB3E76A22030EE900CE6E3A /* RedViewModuleFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB3E77522030F8300CE6E3A /* HomeScene.swift */,
+				DAB3E7E6220318B600CE6E3A /* HomeSceneFlowDelegate.swift */,
 				DAB3E73822030AB000CE6E3A /* HomeSceneFramework.h */,
 				DAB3E73922030AB000CE6E3A /* Info.plist */,
 			);
@@ -181,6 +191,7 @@
 		DAB3E75B22030D4800CE6E3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAB3E7E822031A1200CE6E3A /* SharedEntities.framework */,
 				DAB3E76922030EE900CE6E3A /* RedViewModuleFramework.framework */,
 			);
 			name = Frameworks;
@@ -374,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB3E7E7220318B600CE6E3A /* HomeSceneFlowDelegate.swift in Sources */,
 				DAB3E77622030F8300CE6E3A /* HomeScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
