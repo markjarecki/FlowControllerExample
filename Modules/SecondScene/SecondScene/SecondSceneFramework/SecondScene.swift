@@ -13,13 +13,13 @@ final public class SecondScene: BlueViewController {
     
     // MARK: - Properties
     
-    let flowDelegate: SecondSceneFlowDelegate
+    public let flowDelegate: SecondSceneFlowDelegate
     
     // MARK: Flow outlets
     
     // This flow outlet is triggers a transition to the scene specified in the flow controller
     // This transition can be a jump cut (no animation), animated, or interactive, depending on the implementation given at the application level
-    public var edgeswipeFlowOutlet: TransitionController?
+    public var edgeswipeFlowOutlet: UIPercentDrivenInteractiveTransition?
     
     // MARK: - Initialisers
     
@@ -34,17 +34,6 @@ final public class SecondScene: BlueViewController {
     required public init?(coder aDecoder: NSCoder) {
         
         fatalError("init(coder:) has not been implemented")
-        
-    }
-    
-    // MARK: - UIViewController lifecycle overrides
-
-    override public func viewDidLoad() {
-
-        super.viewDidLoad()
-        
-        // Set the TransitionController's source view controller
-        edgeswipeFlowOutlet?.sourceViewController = self
         
     }
 

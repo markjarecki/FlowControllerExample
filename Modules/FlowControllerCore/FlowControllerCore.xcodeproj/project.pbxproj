@@ -11,7 +11,6 @@
 		DA3636C822006F4900424B55 /* FlowControllerCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3636C722006F4900424B55 /* FlowControllerCoreTests.swift */; };
 		DA3636CA22006F4900424B55 /* FlowControllerCore.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3636BC22006F4900424B55 /* FlowControllerCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA3636D422006FC400424B55 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3636D322006FC400424B55 /* FlowController.swift */; };
-		DAB3E82322045CC700CE6E3A /* TransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E82222045CC700CE6E3A /* TransitionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +31,6 @@
 		DA3636C722006F4900424B55 /* FlowControllerCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerCoreTests.swift; sourceTree = "<group>"; };
 		DA3636C922006F4900424B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA3636D322006FC400424B55 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
-		DAB3E82222045CC700CE6E3A /* TransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				DA3636D322006FC400424B55 /* FlowController.swift */,
-				DAB3E82222045CC700CE6E3A /* TransitionController.swift */,
 				DA3636BC22006F4900424B55 /* FlowControllerCore.h */,
 				DA3636BD22006F4900424B55 /* Info.plist */,
 			);
@@ -201,7 +198,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB3E82322045CC700CE6E3A /* TransitionController.swift in Sources */,
 				DA3636D422006FC400424B55 /* FlowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
