@@ -11,9 +11,6 @@ import UIKit
 // Scene interchange entities
 import SharedEntities
 
-//// Transition controller protocol definition
-//import FlowControllerCore
-
 // Origin scene
 import SecondSceneFramework
 
@@ -32,27 +29,15 @@ final class SecondSceneToHomeSceneEdgeSwipeInteractionController: UIPercentDrive
     
     fileprivate var interactive = false
     
-    // MARK: Duration
-    
-    fileprivate let animatorDuration: TimeInterval
-    
     // MARK: Gesture recognizer
     
     private let leftEdgeSwipeGesture = UIScreenEdgePanGestureRecognizer()
-    
-    // MARK: Property animator
-    
-    fileprivate let animator: UIViewPropertyAnimator
-    
+
     // MARK: - Initialisers
     
     init(viewController: UIViewController) {
     
         self.viewController = viewController
-
-        animator = SecondSceneToHomeSceneEdgeSwipeInteractionController.makeAnimator(duration: 1.0)
-
-        animatorDuration = animator.duration
         
         super.init()
         
@@ -117,38 +102,4 @@ final class SecondSceneToHomeSceneEdgeSwipeInteractionController: UIPercentDrive
         
     }
     
-}
-
-// MARK: - Extension
-
-extension SecondSceneToHomeSceneEdgeSwipeInteractionController: UINavigationControllerDelegate {
-
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-    
-        return nil
-    
-    }
-    
-    func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-    
-        return nil
-
-    }
-
-}
-
-
-// MARK: - UIViewPropertyAnimator factory
-
-extension SecondSceneToHomeSceneEdgeSwipeInteractionController {
-
-    static func makeAnimator(duration: TimeInterval) -> UIViewPropertyAnimator {
-
-        // Linear timing
-        let timingCurve = UICubicTimingParameters(animationCurve: .linear)
-
-        return UIViewPropertyAnimator(duration: duration, timingParameters: timingCurve)
-
-    }
-
 }
