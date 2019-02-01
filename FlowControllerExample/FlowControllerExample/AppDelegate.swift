@@ -16,12 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // Setup the flow controller's navigationController dependency
+        // Set up the ApplicationFlowController's navigationController's properties
         let navigationController = UINavigationController()
         navigationController.isToolbarHidden = true
         navigationController.isNavigationBarHidden = true
         
-        // Build the flow controller
+        // Retain the flow controller
         flowController = ApplicationFlowController(navigationController: navigationController)
         
         // Assign the rootViewController
@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         return true
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -53,7 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 
