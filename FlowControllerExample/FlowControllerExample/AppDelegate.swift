@@ -15,13 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-                
+        
+        // Setup the flow controller's navigationController dependency
         let navigationController = UINavigationController()
         navigationController.isToolbarHidden = true
         navigationController.isNavigationBarHidden = true
         
+        // Build the flow controller
         flowController = ApplicationFlowController(navigationController: navigationController)
         
+        // Assign the rootViewController
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
