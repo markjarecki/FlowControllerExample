@@ -130,7 +130,7 @@
 				DA36366222006E4E00424B55 /* AppDelegate.swift */,
 				DA36366422006E4E00424B55 /* ApplicationFlowController.swift */,
 				DAB3E77B2203136E00CE6E3A /* Flow controller extensions */,
-				DAB3E82B220460A600CE6E3A /* Transition controllers */,
+				DAB3E82B220460A600CE6E3A /* Scene interaction controllers */,
 				DA36366922006E4F00424B55 /* Assets.xcassets */,
 				DA36366B22006E4F00424B55 /* LaunchScreen.storyboard */,
 				DA36366E22006E4F00424B55 /* Info.plist */,
@@ -169,13 +169,13 @@
 			path = "Flow controller extensions";
 			sourceTree = "<group>";
 		};
-		DAB3E82B220460A600CE6E3A /* Transition controllers */ = {
+		DAB3E82B220460A600CE6E3A /* Scene interaction controllers */ = {
 			isa = PBXGroup;
 			children = (
 				DAB3E82C220460CB00CE6E3A /* Second scene outlets */,
 				DAB3E83622049EF900CE6E3A /* OLD */,
 			);
-			path = "Transition controllers";
+			path = "Scene interaction controllers";
 			sourceTree = "<group>";
 		};
 		DAB3E82C220460CB00CE6E3A /* Second scene outlets */ = {

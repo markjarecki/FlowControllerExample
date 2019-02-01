@@ -90,7 +90,7 @@ final class SecondSceneToHomeSceneEdgeSwipeInteractionController: UIPercentDrive
                 
                 // Start transition
                 // Call the flow outlet for this interaction event
-                secondScene.flowDelegate.flow(tapFromSecondScene: secondScene, content: Colours(name: secondScene.view.backgroundColor!.description) )
+                secondScene.flowDelegate.flow(edgeswipeFromSecondScene: secondScene, content: Colours(name: secondScene.view.backgroundColor!.description) )
             
             case .changed:
                 

@@ -10,6 +10,6 @@ import SharedEntities
 
 public protocol SecondSceneFlowDelegate: class {
 
-    func flow(tapFromSecondScene: SecondScene, content: Colours) -> Void
+    func flow(edgeswipeFromSecondScene: SecondScene, content: Colours) -> Void
 
 }
