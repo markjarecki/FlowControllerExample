@@ -7,7 +7,6 @@
 //
 
 import BlueViewModuleFramework
-import SharedEntities
 
 final public class SecondScene: BlueViewController {
     
@@ -15,11 +14,15 @@ final public class SecondScene: BlueViewController {
     
     let flowDelegate: SecondSceneFlowDelegate
     
-    let tapGesture = UITapGestureRecognizer()
+    // INJECT THIS DEPENDENCY
+    // TransitionControllerProtocol
+    // Have UIViewController as a requirement
+    // 
+    public var transitionManager: //SecondSceneTransitionManager()
     
     // MARK: - Initialisers
     
-    public init(flowDelegate: SecondSceneFlowDelegate) {
+    public init(flowDelegate: SecondSceneFlowDelegate ) {
     
         self.flowDelegate = flowDelegate
         
@@ -39,22 +42,8 @@ final public class SecondScene: BlueViewController {
 
         super.viewDidLoad()
         
-        // Set up gesture recognizer
-        tapGesture.addTarget(self, action: #selector(handler(tap:)))
-        view.addGestureRecognizer(tapGesture)
-        
-
-    }
-    
-    // MARK: - Gesture handler
-    
-    @objc public func handler(tap: UITapGestureRecognizer) {
-
-        if tap.state == .ended {
-        
-            flowDelegate.flow(tapFromSecondScene: self, content: Colours(name: view.backgroundColor!.description) )
-        
-        }
+        // Set the transition manager's source view controller
+        transitionManager.sourceViewController = self
         
     }
 

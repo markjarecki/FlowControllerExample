@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA8B67A922035B5D006AB282 /* SecondSceneTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B67A822035B5D006AB282 /* SecondSceneTransitionManager.swift */; };
 		DAB3E789220313C500CE6E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E788220313C500CE6E3A /* AppDelegate.swift */; };
 		DAB3E790220313C600CE6E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB3E78F220313C600CE6E3A /* Assets.xcassets */; };
 		DAB3E793220313C600CE6E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB3E791220313C600CE6E3A /* LaunchScreen.storyboard */; };
@@ -74,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA8B67A822035B5D006AB282 /* SecondSceneTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneTransitionManager.swift; sourceTree = "<group>"; };
 		DAB3E785220313C500CE6E3A /* SecondScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E788220313C500CE6E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB3E78F220313C600CE6E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				DAB3E7CB2203145200CE6E3A /* SecondScene.swift */,
 				DAB3E7ED2203242200CE6E3A /* SecondSceneFlowDelegate.swift */,
+				DA8B67A822035B5D006AB282 /* SecondSceneTransitionManager.swift */,
 				DAB3E7AF220313E100CE6E3A /* SecondSceneFramework.h */,
 				DAB3E7B0220313E100CE6E3A /* Info.plist */,
 			);
@@ -394,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8B67A922035B5D006AB282 /* SecondSceneTransitionManager.swift in Sources */,
 				DAB3E7CC2203145200CE6E3A /* SecondScene.swift in Sources */,
 				DAB3E7EE2203242200CE6E3A /* SecondSceneFlowDelegate.swift in Sources */,
 			);

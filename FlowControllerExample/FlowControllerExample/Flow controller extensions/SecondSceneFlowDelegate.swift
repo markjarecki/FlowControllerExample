@@ -22,6 +22,10 @@ extension ApplicationFlowController: SecondSceneFlowDelegate {
     // Triggers popping the view module from the ApplicationFlowController's navigationController stack
     public func flow(tapFromSecondScene: SecondScene, content: Colours) -> Void {
     
+        let transition = SOME Transition manager
+        
+        tapFromSecondScene.transitioningDelegate = transition
+        
         self.navigationController.popViewController(animated: false)
     
     }
