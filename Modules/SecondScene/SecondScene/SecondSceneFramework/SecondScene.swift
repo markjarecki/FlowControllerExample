@@ -7,6 +7,7 @@
 //
 
 import BlueViewModuleFramework
+import FlowControllerCore
 
 final public class SecondScene: BlueViewController {
     
@@ -14,11 +15,11 @@ final public class SecondScene: BlueViewController {
     
     let flowDelegate: SecondSceneFlowDelegate
     
-    // INJECT THIS DEPENDENCY
-    // TransitionControllerProtocol
-    // Have UIViewController as a requirement
-    // 
-    public var transitionManager: //SecondSceneTransitionManager()
+    // MARK: Flow outlets
+    
+    // This flow outlet is triggers a transition to the scene specified in the flow controller
+    // This transition can be a jump cut (no animation), animated, or interactive, depending on the implementation given at the application level
+    public var edgeswipeFlowOutlet: TransitionController?
     
     // MARK: - Initialisers
     
@@ -42,8 +43,8 @@ final public class SecondScene: BlueViewController {
 
         super.viewDidLoad()
         
-        // Set the transition manager's source view controller
-        transitionManager.sourceViewController = self
+        // Set the TransitionController's source view controller
+        edgeswipeFlowOutlet?.sourceViewController = self
         
     }
 
