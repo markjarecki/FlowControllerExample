@@ -18,6 +18,9 @@
 		DA36373B2200804800424B55 /* RedViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637382200803600424B55 /* RedViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA3637A722008A7D00424B55 /* BlueViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */; };
 		DA3637A822008A7D00424B55 /* BlueViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA75E3DE2205138600D864E1 /* ApplicationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75E3DD2205138600D864E1 /* ApplicationNavigationController.swift */; };
+		DAB038E82204AB0800BF9E81 /* SecondSceneToHomeSceneEdgeSwipeNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB038E72204AB0800BF9E81 /* SecondSceneToHomeSceneEdgeSwipeNavigationDelegate.swift */; };
+		DAB038EA2204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB038E92204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift */; };
 		DAB3E703220308B600CE6E3A /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E701220308B200CE6E3A /* SharedEntities.framework */; };
 		DAB3E704220308B600CE6E3A /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E701220308B200CE6E3A /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB3E77322030F4900CE6E3A /* HomeSceneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */; };
@@ -26,6 +29,7 @@
 		DAB3E7E42203150000CE6E3A /* SecondSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB3E7EB2203205900CE6E3A /* HomeSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate.swift */; };
 		DAB3E7F62203249600CE6E3A /* SecondSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate.swift */; };
+		DAB3E832220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E831220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,11 +74,15 @@
 		DA3636D8220073A700424B55 /* FlowControllerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowControllerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3637382200803600424B55 /* RedViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlueViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA75E3DD2205138600D864E1 /* ApplicationNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationNavigationController.swift; sourceTree = "<group>"; };
+		DAB038E72204AB0800BF9E81 /* SecondSceneToHomeSceneEdgeSwipeNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneToHomeSceneEdgeSwipeNavigationDelegate.swift; sourceTree = "<group>"; };
+		DAB038E92204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneToHomeSceneEdgeSwipeAnimator.swift; sourceTree = "<group>"; };
 		DAB3E701220308B200CE6E3A /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeSceneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecondSceneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneFlowDelegate.swift; sourceTree = "<group>"; };
 		DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneFlowDelegate.swift; sourceTree = "<group>"; };
+		DAB3E831220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneToHomeSceneEdgeSwipeInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +133,9 @@
 			children = (
 				DA36366222006E4E00424B55 /* AppDelegate.swift */,
 				DA36366422006E4E00424B55 /* ApplicationFlowController.swift */,
+				DA75E3DD2205138600D864E1 /* ApplicationNavigationController.swift */,
 				DAB3E77B2203136E00CE6E3A /* Flow controller extensions */,
+				DAB3E82B220460A600CE6E3A /* Scene interaction controllers */,
 				DA36366922006E4F00424B55 /* Assets.xcassets */,
 				DA36366B22006E4F00424B55 /* LaunchScreen.storyboard */,
 				DA36366E22006E4F00424B55 /* Info.plist */,
@@ -155,6 +165,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DAB038EB2204ACC300BF9E81 /* SecondSceneToHomeSceneEdgeSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				DAB3E831220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeInteractor.swift */,
+				DAB038E72204AB0800BF9E81 /* SecondSceneToHomeSceneEdgeSwipeNavigationDelegate.swift */,
+				DAB038E92204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift */,
+			);
+			path = SecondSceneToHomeSceneEdgeSwipe;
+			sourceTree = "<group>";
+		};
 		DAB3E77B2203136E00CE6E3A /* Flow controller extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +182,22 @@
 				DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate.swift */,
 			);
 			path = "Flow controller extensions";
+			sourceTree = "<group>";
+		};
+		DAB3E82B220460A600CE6E3A /* Scene interaction controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAB3E82C220460CB00CE6E3A /* Second scene outlets */,
+			);
+			path = "Scene interaction controllers";
+			sourceTree = "<group>";
+		};
+		DAB3E82C220460CB00CE6E3A /* Second scene outlets */ = {
+			isa = PBXGroup;
+			children = (
+				DAB038EB2204ACC300BF9E81 /* SecondSceneToHomeSceneEdgeSwipe */,
+			);
+			path = "Second scene outlets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA75E3DE2205138600D864E1 /* ApplicationNavigationController.swift in Sources */,
+				DAB038E82204AB0800BF9E81 /* SecondSceneToHomeSceneEdgeSwipeNavigationDelegate.swift in Sources */,
+				DAB3E832220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeInteractor.swift in Sources */,
 				DA36366522006E4E00424B55 /* ApplicationFlowController.swift in Sources */,
 				DAB3E7F62203249600CE6E3A /* SecondSceneFlowDelegate.swift in Sources */,
+				DAB038EA2204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift in Sources */,
 				DA36366322006E4E00424B55 /* AppDelegate.swift in Sources */,
 				DAB3E7EB2203205900CE6E3A /* HomeSceneFlowDelegate.swift in Sources */,
 			);

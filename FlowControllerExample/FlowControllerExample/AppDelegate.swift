@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Set up the ApplicationFlowController's navigationController's properties
-        let navigationController = UINavigationController()
+        let navigationController = ApplicationNavigationController()
         navigationController.isToolbarHidden = true
         navigationController.isNavigationBarHidden = true
         

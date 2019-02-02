@@ -12,18 +12,22 @@ import SharedEntities
 
 /*
  
- Extension defines the ApplicationFlowController's handling of a flow intent notification from the SecondScene view module.
+ Extension defines the ApplicationFlowController's handling of a flow outlet from the SecondScene view module.
  
  */
 
 extension ApplicationFlowController: SecondSceneFlowDelegate {
 
-    // SecondScene tapped with content
+    // SecondScene edgeSwiped with content
     // Triggers popping the view module from the ApplicationFlowController's navigationController stack
-    public func flow(tapFromSecondScene: SecondScene, content: Colours) -> Void {
-    
-        self.navigationController.popViewController(animated: false)
-    
+    public func flow(edgeswipeFromSecondScene scene: SecondScene, content: Colours) -> Void {
+            
+        // Assign the appropriate transition controller for the given flow outlet, to the navigationController's delegate
+        navigationController.delegate = scene.edgeswipeFlowInteractor
+        
+        // By design, we will be going back to the HomeScene, by popping the SecondScene from the stack
+        navigationController.popViewController(animated: true)
+        
     }
 
 }
