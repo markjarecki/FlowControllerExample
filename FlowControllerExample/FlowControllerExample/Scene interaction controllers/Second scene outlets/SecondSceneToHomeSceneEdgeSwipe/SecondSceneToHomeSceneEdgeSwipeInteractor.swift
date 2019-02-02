@@ -1,5 +1,5 @@
 //
-//  SecondSceneToHomeSceneEdgeSwipeInteractionController.swift
+//  SecondSceneToHomeSceneEdgeSwipeInteractor.swift
 //  FlowControllerExample
 //
 //  Created by Mark Jarecki on 1/2/19.
@@ -11,23 +11,23 @@ import UIKit
 // Scene interchange entities
 import SharedEntities
 
-// Origin scene
+// From scene
 import SecondSceneFramework
 
-// Destination scene
+// To scene
 import HomeSceneFramework
 
-final class SecondSceneToHomeSceneEdgeSwipeInteractionController: UIPercentDrivenInteractiveTransition {
+final class SecondSceneToHomeSceneEdgeSwipeInteractor: UIPercentDrivenInteractiveTransition {
     
     // MARK: - Properties
     
     // MARK: TransitionController conformance
     
-    weak var viewController: UIViewController?
+    let viewController: UIViewController
     
-    // MARK: Interactivity flag
+    // MARK: Interaction in progress flag
     
-    fileprivate var interactive = false
+    fileprivate(set) var interactionInProgress = false
     
     // MARK: Gesture recognizer
     
@@ -36,11 +36,11 @@ final class SecondSceneToHomeSceneEdgeSwipeInteractionController: UIPercentDrive
     // MARK: - Initialisers
     
     init(viewController: UIViewController) {
-    
+            
         self.viewController = viewController
         
         super.init()
-        
+                
         prepareGestureRecogniser(in: viewController.view)
         
     }
@@ -52,7 +52,7 @@ final class SecondSceneToHomeSceneEdgeSwipeInteractionController: UIPercentDrive
         // Set up gesture recognizer
         leftEdgeSwipeGesture.addTarget(self, action: #selector(handler(pan:)))
         leftEdgeSwipeGesture.edges = .left
-        viewController!.view.addGestureRecognizer(leftEdgeSwipeGesture)
+        viewController.view.addGestureRecognizer(leftEdgeSwipeGesture)
     
     }
     
@@ -65,13 +65,13 @@ final class SecondSceneToHomeSceneEdgeSwipeInteractionController: UIPercentDrive
         let translation = pan.translation(in: pan.view!)
         
         // Distance travelled
-        let distance = translation.x / pan.view!.bounds.width * 0.5
+        let distance = translation.x / pan.view!.bounds.width
         
         switch (pan.state) {
             
             case .began:
 
-                interactive = true
+                interactionInProgress = true
                 
                 // Start transition
                 // Call the flow outlet for this interaction event
@@ -81,23 +81,29 @@ final class SecondSceneToHomeSceneEdgeSwipeInteractionController: UIPercentDrive
                 
                 update(distance)
             
-            // .ended, .cancelled, .failed
-            default:
+            case .cancelled:
                 
-                interactive = false
+                interactionInProgress = false
                 
-                if distance > 0.2 {
+                cancel()
+            
+            case .ended:
+                
+                interactionInProgress = false
+                                
+                if pan.velocity(in: pan.view).x > 300 {
                     
-                    // Threshold breached - finish transition
                     finish()
                     
-                } else {
-                    
-                    // Threshold missed - cancel transition
-                    cancel()
+                    return
                     
                 }
-
+                
+                distance > 0.5 ? finish() : cancel()
+            
+            // .failed
+            default: break
+            
         }
         
     }

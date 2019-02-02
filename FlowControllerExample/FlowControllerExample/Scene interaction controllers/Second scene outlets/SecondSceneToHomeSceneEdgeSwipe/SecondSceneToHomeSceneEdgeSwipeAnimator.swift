@@ -23,19 +23,17 @@ final class SecondSceneToHomeSceneEdgeSwipeAnimator: NSObject, UIViewControllerA
 
     // MARK: Duration
     
-    fileprivate let animatorDuration: TimeInterval
+    private let animatorDuration: TimeInterval = 0.5
     
-    // MARK: Property animator
+    // MARK: Interactor
     
-    fileprivate let animator: UIViewPropertyAnimator
+    weak var interactor: UIViewControllerInteractiveTransitioning?
     
     // MARK: - Initialiser
 
-    override init() {
+    init(interactor: UIViewControllerInteractiveTransitioning) {
     
-        animator = SecondSceneToHomeSceneEdgeSwipeAnimator.makeAnimator(duration: 1.0)
-
-        animatorDuration = animator.duration
+        self.interactor = interactor
         
         super.init()
         
@@ -45,56 +43,42 @@ final class SecondSceneToHomeSceneEdgeSwipeAnimator: NSObject, UIViewControllerA
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
 
-        print("transitionDuration")
-
         return animatorDuration
 
     }
 
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
 
-        print("animateTransition")
-
         // References to: from and to views
         let container = transitionContext.containerView
-        let fromView = transitionContext.view(forKey: UITransitionContextViewKey.from)!
-        let toView = transitionContext.view(forKey: UITransitionContextViewKey.to)!
+        let fromView = transitionContext.view(forKey: .from)!
+        let toView = transitionContext.view(forKey: .to)!
 
         // Add the active views to the container
         container.addSubview(toView)
         container.addSubview(fromView)
-
-        // Add a simple fadeout animation
-        animator.addAnimations{ [unowned self] in
-
-            let internalAnimator = UIViewPropertyAnimator(duration: self.animator.duration, curve: .linear){
-
-                fromView.alpha = 0
-
-            }
-
-            internalAnimator.startAnimation()
-
+        
+        // Animation properties
+        let animations: (() -> Void) = {
+            
+            fromView.alpha = 0
+            
         }
-
-//        // Animator must be paused for interactive transition
-//        animator.pauseAnimation()
-
-    }
-
-}
-
-// MARK: - UIViewPropertyAnimator factory
-
-extension SecondSceneToHomeSceneEdgeSwipeAnimator {
-
-    static func makeAnimator(duration: TimeInterval) -> UIViewPropertyAnimator {
-
-        // Linear timing
-        let timingCurve = UICubicTimingParameters(animationCurve: .linear)
-
-        return UIViewPropertyAnimator(duration: duration, timingParameters: timingCurve)
-
+        
+        let completion: ((Bool) -> Void) = { _ in
+            
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            
+        }
+        
+        // Linear animation
+        // Do no use UIViewPropertyAnimator
+        UIView.animate(withDuration: 1.0,
+                       delay: 0,
+                       options: [.allowUserInteraction, .curveLinear],
+                       animations: animations,
+                       completion: completion)
+        
     }
 
 }

@@ -7,7 +7,6 @@
 //
 
 import BlueViewModuleFramework
-import FlowControllerCore
 
 final public class SecondScene: BlueViewController {
     
@@ -15,11 +14,11 @@ final public class SecondScene: BlueViewController {
     
     public let flowDelegate: SecondSceneFlowDelegate
     
-    // MARK: Flow outlets
+    // MARK: Flow interactors
     
-    // This flow outlet is triggers a transition to the scene specified in the flow controller
-    // This transition can be a jump cut (no animation), animated, or interactive, depending on the implementation given at the application level
-    public var edgeswipeFlowOutlet: UIPercentDrivenInteractiveTransition?
+    // Flow interactors trigger flows to the scene specified in the flow controller
+    // This flow's transition can be a jump cut (no animation), animated, or interactive, depending on the implementation given by the flow controller
+    public var edgeswipeFlowInteractor: (UIPercentDrivenInteractiveTransition & UINavigationControllerDelegate)?
     
     // MARK: - Initialisers
     

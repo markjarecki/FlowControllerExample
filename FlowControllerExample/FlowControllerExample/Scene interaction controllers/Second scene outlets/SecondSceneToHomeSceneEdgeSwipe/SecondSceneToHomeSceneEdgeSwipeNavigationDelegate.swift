@@ -8,19 +8,33 @@
 
 import UIKit
 
-final class SecondSceneToHomeSceneEdgeSwipeNavigationDelegate: NSObject, UINavigationControllerDelegate {
+// From scene
+import SecondSceneFramework
+
+// To scene
+import HomeSceneFramework
+
+extension SecondSceneToHomeSceneEdgeSwipeInteractor: UINavigationControllerDelegate {
     
     // MARK: - UINavigationControllerDelegate conformance
 
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-    
-        return nil
+            
+        // Ensure transition conditions are correct
+        guard operation == .pop,
+            fromVC is SecondScene,
+            toVC is HomeScene else { return nil }
+                
+        return SecondSceneToHomeSceneEdgeSwipeAnimator(interactor: self)
     
     }
     
     func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
     
-        return nil
+        // Ensure interaction has been triggered by the interactor
+        guard interactionInProgress == true else { return nil }
+                
+        return self
 
     }
 

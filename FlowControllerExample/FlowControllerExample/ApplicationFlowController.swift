@@ -39,6 +39,8 @@ class ApplicationFlowController: FlowController {
         let rootController = HomeScene(flowDelegate: self)
         
         navigationController.show(rootController, sender: nil)
+        
+        navigationController.interactivePopGestureRecognizer?.delegate = nil
     
     }
     

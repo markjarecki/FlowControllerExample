@@ -25,8 +25,8 @@ extension ApplicationFlowController: HomeSceneFlowDelegate {
         // Build the destination scene
         let secondScene = SecondScene(flowDelegate: self)
         
-        // Assign all destination scene transition controllers - for the given flow outlets
-        secondScene.edgeswipeFlowOutlet = SecondSceneToHomeSceneEdgeSwipeInteractionController(viewController: secondScene)
+        // Assign all destination scene flow interactors
+        secondScene.edgeswipeFlowInteractor = SecondSceneToHomeSceneEdgeSwipeInteractor(viewController: secondScene)
         
         // Add the destination to the stack - without an animation
         navigationController.pushViewController(secondScene, animated: false)
