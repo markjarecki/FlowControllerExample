@@ -21,9 +21,10 @@ final class SecondSceneToHomeSceneEdgeSwipeInteractor: UIPercentDrivenInteractiv
     
     // MARK: - Properties
     
-    // MARK: TransitionController conformance
-    
+    #warning("Add to a protocol")
     let viewController: UIViewController
+    
+    let flowDelegate: SecondSceneFlowDelegate
     
     // MARK: Interaction in progress flag
     
@@ -35,9 +36,10 @@ final class SecondSceneToHomeSceneEdgeSwipeInteractor: UIPercentDrivenInteractiv
 
     // MARK: - Initialisers
     
-    init(viewController: UIViewController) {
+    init(viewController: UIViewController, flowDelegate: SecondSceneFlowDelegate) {
             
         self.viewController = viewController
+        self.flowDelegate = flowDelegate
         
         super.init()
                 
@@ -75,7 +77,7 @@ final class SecondSceneToHomeSceneEdgeSwipeInteractor: UIPercentDrivenInteractiv
                 
                 // Start transition
                 // Call the flow outlet for this interaction event
-                secondScene.flowDelegate.flow(edgeswipeFromSecondScene: secondScene, content: Colours(name: secondScene.view.backgroundColor!.description) )
+                flowDelegate.flow(edgeswipeFromSecondScene: secondScene, content: Colours(name: secondScene.view.backgroundColor!.description) )
             
             case .changed:
                 

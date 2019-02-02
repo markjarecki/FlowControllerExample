@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1413F32205C75200D1B31B /* SecondSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1413F22205C75200D1B31B /* SecondSceneFlowDelegate.swift */; };
 		DA36366322006E4E00424B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36366222006E4E00424B55 /* AppDelegate.swift */; };
 		DA36366522006E4E00424B55 /* ApplicationFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36366422006E4E00424B55 /* ApplicationFlowController.swift */; };
 		DA36366A22006E4F00424B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA36366922006E4F00424B55 /* Assets.xcassets */; };
@@ -27,8 +28,8 @@
 		DAB3E77422030F4900CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB3E7E32203150000CE6E3A /* SecondSceneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */; };
 		DAB3E7E42203150000CE6E3A /* SecondSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAB3E7EB2203205900CE6E3A /* HomeSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate.swift */; };
-		DAB3E7F62203249600CE6E3A /* SecondSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate.swift */; };
+		DAB3E7EB2203205900CE6E3A /* HomeSceneFlowDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate+Extension.swift */; };
+		DAB3E7F62203249600CE6E3A /* SecondSceneFlowDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate+Extension.swift */; };
 		DAB3E832220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E831220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeInteractor.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA1413F22205C75200D1B31B /* SecondSceneFlowDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSceneFlowDelegate.swift; sourceTree = "<group>"; };
 		DA36365F22006E4E00424B55 /* FlowControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA36366222006E4E00424B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA36366422006E4E00424B55 /* ApplicationFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowController.swift; sourceTree = "<group>"; };
@@ -80,8 +82,8 @@
 		DAB3E701220308B200CE6E3A /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeSceneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecondSceneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneFlowDelegate.swift; sourceTree = "<group>"; };
-		DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneFlowDelegate.swift; sourceTree = "<group>"; };
+		DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeSceneFlowDelegate+Extension.swift"; sourceTree = "<group>"; };
+		DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecondSceneFlowDelegate+Extension.swift"; sourceTree = "<group>"; };
 		DAB3E831220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneToHomeSceneEdgeSwipeInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +167,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA75E3E02205BFD500D864E1 /* Flow delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DA1413F22205C75200D1B31B /* SecondSceneFlowDelegate.swift */,
+			);
+			path = "Flow delegates";
+			sourceTree = "<group>";
+		};
 		DAB038EB2204ACC300BF9E81 /* SecondSceneToHomeSceneEdgeSwipe */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,8 +188,8 @@
 		DAB3E77B2203136E00CE6E3A /* Flow controller extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate.swift */,
-				DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate.swift */,
+				DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate+Extension.swift */,
+				DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate+Extension.swift */,
 			);
 			path = "Flow controller extensions";
 			sourceTree = "<group>";
@@ -187,17 +197,18 @@
 		DAB3E82B220460A600CE6E3A /* Scene interaction controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DAB3E82C220460CB00CE6E3A /* Second scene outlets */,
+				DAB3E82C220460CB00CE6E3A /* Second scene flows */,
 			);
 			path = "Scene interaction controllers";
 			sourceTree = "<group>";
 		};
-		DAB3E82C220460CB00CE6E3A /* Second scene outlets */ = {
+		DAB3E82C220460CB00CE6E3A /* Second scene flows */ = {
 			isa = PBXGroup;
 			children = (
+				DA75E3E02205BFD500D864E1 /* Flow delegates */,
 				DAB038EB2204ACC300BF9E81 /* SecondSceneToHomeSceneEdgeSwipe */,
 			);
-			path = "Second scene outlets";
+			path = "Second scene flows";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,12 +314,13 @@
 			files = (
 				DA75E3DE2205138600D864E1 /* ApplicationNavigationController.swift in Sources */,
 				DAB038E82204AB0800BF9E81 /* SecondSceneToHomeSceneEdgeSwipeNavigationDelegate.swift in Sources */,
+				DA1413F32205C75200D1B31B /* SecondSceneFlowDelegate.swift in Sources */,
 				DAB3E832220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeInteractor.swift in Sources */,
 				DA36366522006E4E00424B55 /* ApplicationFlowController.swift in Sources */,
-				DAB3E7F62203249600CE6E3A /* SecondSceneFlowDelegate.swift in Sources */,
+				DAB3E7F62203249600CE6E3A /* SecondSceneFlowDelegate+Extension.swift in Sources */,
 				DAB038EA2204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift in Sources */,
 				DA36366322006E4E00424B55 /* AppDelegate.swift in Sources */,
-				DAB3E7EB2203205900CE6E3A /* HomeSceneFlowDelegate.swift in Sources */,
+				DAB3E7EB2203205900CE6E3A /* HomeSceneFlowDelegate+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,7 +20,6 @@
 		DAB3E7DE220314C000CE6E3A /* BlueViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7DD220314C000CE6E3A /* BlueViewModuleFramework.framework */; };
 		DAB3E7DF220314CD00CE6E3A /* BlueViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7DD220314C000CE6E3A /* BlueViewModuleFramework.framework */; };
 		DAB3E7E0220314CD00CE6E3A /* BlueViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7DD220314C000CE6E3A /* BlueViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAB3E7EE2203242200CE6E3A /* SecondSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7ED2203242200CE6E3A /* SecondSceneFlowDelegate.swift */; };
 		DAB3E7F02203244E00CE6E3A /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7EF2203244E00CE6E3A /* SharedEntities.framework */; };
 		DAB3E7F12203245D00CE6E3A /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7EF2203244E00CE6E3A /* SharedEntities.framework */; };
 		DAB3E7F22203245D00CE6E3A /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7EF2203244E00CE6E3A /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -94,7 +93,6 @@
 		DAB3E7BE220313E100CE6E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB3E7CB2203145200CE6E3A /* SecondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScene.swift; sourceTree = "<group>"; };
 		DAB3E7DD220314C000CE6E3A /* BlueViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlueViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAB3E7ED2203242200CE6E3A /* SecondSceneFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneFlowDelegate.swift; sourceTree = "<group>"; };
 		DAB3E7EF2203244E00CE6E3A /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E82422045E7E00CE6E3A /* FlowControllerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowControllerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -186,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				DAB3E7CB2203145200CE6E3A /* SecondScene.swift */,
-				DAB3E7ED2203242200CE6E3A /* SecondSceneFlowDelegate.swift */,
 				DAB3E7AF220313E100CE6E3A /* SecondSceneFramework.h */,
 				DAB3E7B0220313E100CE6E3A /* Info.plist */,
 			);
@@ -403,7 +400,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB3E7CC2203145200CE6E3A /* SecondScene.swift in Sources */,
-				DAB3E7EE2203242200CE6E3A /* SecondSceneFlowDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

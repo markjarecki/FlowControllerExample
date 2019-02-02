@@ -7,6 +7,7 @@
 //
 
 import SharedEntities
+import SecondSceneFramework
 
 public protocol SecondSceneFlowDelegate: class {
 

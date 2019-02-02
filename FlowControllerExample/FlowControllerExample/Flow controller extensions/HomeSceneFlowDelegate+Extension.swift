@@ -23,10 +23,10 @@ extension ApplicationFlowController: HomeSceneFlowDelegate {
     public func flow(tapFromHomeScene scene: HomeScene, content: Colours) -> Void {
     
         // Build the destination scene
-        let secondScene = SecondScene(flowDelegate: self)
+        let secondScene = SecondScene()
         
-        // Assign all destination scene flow interactors
-        secondScene.edgeswipeFlowInteractor = SecondSceneToHomeSceneEdgeSwipeInteractor(viewController: secondScene)
+        // Assign all destination scene flow interactors for each flow
+        secondScene.edgeswipeFlowInteractor = SecondSceneToHomeSceneEdgeSwipeInteractor(viewController: secondScene, flowDelegate: self)
         
         // Add the destination to the stack - without an animation
         navigationController.pushViewController(secondScene, animated: false)
