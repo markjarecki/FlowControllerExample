@@ -111,6 +111,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA1413F42206172200D1B31B /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				DAB038EB2204ACC300BF9E81 /* SecondSceneToHomeSceneEdgeSwipe */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		DA1413F52206175100D1B31B /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				DA36366922006E4F00424B55 /* Assets.xcassets */,
+				DA36366B22006E4F00424B55 /* LaunchScreen.storyboard */,
+				DA36366E22006E4F00424B55 /* Info.plist */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
 		DA36365622006E4E00424B55 = {
 			isa = PBXGroup;
 			children = (
@@ -137,10 +155,8 @@
 				DA36366422006E4E00424B55 /* ApplicationFlowController.swift */,
 				DA75E3DD2205138600D864E1 /* ApplicationNavigationController.swift */,
 				DAB3E77B2203136E00CE6E3A /* Flow controller extensions */,
-				DAB3E82B220460A600CE6E3A /* Scene interaction controllers */,
-				DA36366922006E4F00424B55 /* Assets.xcassets */,
-				DA36366B22006E4F00424B55 /* LaunchScreen.storyboard */,
-				DA36366E22006E4F00424B55 /* Info.plist */,
+				DAB3E82B220460A600CE6E3A /* Scene flows */,
+				DA1413F52206175100D1B31B /* Bundle */,
 			);
 			path = FlowControllerExample;
 			sourceTree = "<group>";
@@ -167,12 +183,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA75E3E02205BFD500D864E1 /* Flow delegates */ = {
+		DA75E3E02205BFD500D864E1 /* Flow delegate */ = {
 			isa = PBXGroup;
 			children = (
 				DA1413F22205C75200D1B31B /* SecondSceneFlowDelegate.swift */,
 			);
-			path = "Flow delegates";
+			path = "Flow delegate";
 			sourceTree = "<group>";
 		};
 		DAB038EB2204ACC300BF9E81 /* SecondSceneToHomeSceneEdgeSwipe */ = {
@@ -194,21 +210,21 @@
 			path = "Flow controller extensions";
 			sourceTree = "<group>";
 		};
-		DAB3E82B220460A600CE6E3A /* Scene interaction controllers */ = {
+		DAB3E82B220460A600CE6E3A /* Scene flows */ = {
 			isa = PBXGroup;
 			children = (
-				DAB3E82C220460CB00CE6E3A /* Second scene flows */,
+				DAB3E82C220460CB00CE6E3A /* Second scene */,
 			);
-			path = "Scene interaction controllers";
+			path = "Scene flows";
 			sourceTree = "<group>";
 		};
-		DAB3E82C220460CB00CE6E3A /* Second scene flows */ = {
+		DAB3E82C220460CB00CE6E3A /* Second scene */ = {
 			isa = PBXGroup;
 			children = (
-				DA75E3E02205BFD500D864E1 /* Flow delegates */,
-				DAB038EB2204ACC300BF9E81 /* SecondSceneToHomeSceneEdgeSwipe */,
+				DA75E3E02205BFD500D864E1 /* Flow delegate */,
+				DA1413F42206172200D1B31B /* Flows */,
 			);
-			path = "Second scene flows";
+			path = "Second scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,7 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2J2MP846S;
-				INFOPLIST_FILE = FlowControllerExample/Info.plist;
+				INFOPLIST_FILE = FlowControllerExample/Bundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,7 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2J2MP846S;
-				INFOPLIST_FILE = FlowControllerExample/Info.plist;
+				INFOPLIST_FILE = FlowControllerExample/Bundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
