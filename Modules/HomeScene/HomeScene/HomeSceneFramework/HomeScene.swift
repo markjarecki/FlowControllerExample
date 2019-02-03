@@ -8,7 +8,7 @@
 
 import RedViewModuleFramework
 
-final public class HomeScene: RedViewController {
+open class HomeScene: RedViewController {
 
     // MARK: User interactors
     

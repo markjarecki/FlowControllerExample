@@ -8,7 +8,7 @@
 
 import BlueViewModuleFramework
 
-final public class SecondScene: BlueViewController {
+open class SecondScene: BlueViewController {
     
     // MARK: User interactors
     
