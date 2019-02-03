@@ -6,8 +6,6 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
-import UIKit
-
 // Scene interchange entities
 import SharedEntities
 

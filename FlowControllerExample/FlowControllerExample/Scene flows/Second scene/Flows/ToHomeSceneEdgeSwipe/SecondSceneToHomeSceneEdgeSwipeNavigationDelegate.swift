@@ -6,15 +6,13 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
-import UIKit
-
 // From scene
 import SecondSceneFramework
 
 // To scene
 import HomeSceneFramework
 
-extension SecondSceneToHomeSceneEdgeSwipeInteractor: UINavigationControllerDelegate {
+extension SecondSceneToHomeSceneEdgeSwipeUserInteractor: UINavigationControllerDelegate {
     
     // MARK: - UINavigationControllerDelegate conformance
 

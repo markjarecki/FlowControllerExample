@@ -12,7 +12,7 @@ import SharedEntities
 
 /*
  
- Extension defines the ApplicationFlowController's handling of a flow outlet from the HomeScene view module.
+ Extension defines the ApplicationFlowController's handling of a flow trigger from the HomeScene view module.
  
 */
 
@@ -25,8 +25,11 @@ extension ApplicationFlowController: HomeSceneFlowDelegate {
         // Build the destination scene
         let secondScene = SecondScene()
         
-        // Assign all destination scene flow interactors for each flow
-        secondScene.edgeswipeFlowInteractor = SecondSceneToHomeSceneEdgeSwipeInteractor(viewController: secondScene, flowDelegate: self)
+        // Assign all destination scene user interactors
+        // One user interactor per flow
+        secondScene.edgeswipeUserInteractor = SecondSceneToHomeSceneEdgeSwipeUserInteractor(viewController: secondScene, flowDelegate: self)
+        
+        navigationController.delegate = scene.tapUserInteractor
         
         // Add the destination to the stack - without an animation
         navigationController.pushViewController(secondScene, animated: false)

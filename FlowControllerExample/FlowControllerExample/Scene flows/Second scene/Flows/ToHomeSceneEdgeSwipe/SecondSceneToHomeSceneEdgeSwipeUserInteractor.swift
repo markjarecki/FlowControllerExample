@@ -1,12 +1,10 @@
 //
-//  SecondSceneToHomeSceneEdgeSwipeInteractor.swift
+//  SecondSceneToHomeSceneEdgeSwipeUserInteractor.swift
 //  FlowControllerExample
 //
 //  Created by Mark Jarecki on 1/2/19.
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
-
-import UIKit
 
 // Scene interchange entities
 import SharedEntities
@@ -14,14 +12,10 @@ import SharedEntities
 // From scene
 import SecondSceneFramework
 
-// To scene
-import HomeSceneFramework
-
-final class SecondSceneToHomeSceneEdgeSwipeInteractor: UIPercentDrivenInteractiveTransition {
+final class SecondSceneToHomeSceneEdgeSwipeUserInteractor: UIPercentDrivenInteractiveTransition {
     
     // MARK: - Properties
     
-    #warning("Add to a protocol")
     let viewController: UIViewController
     
     let flowDelegate: SecondSceneFlowDelegate

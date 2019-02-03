@@ -23,7 +23,7 @@ import HomeSceneFramework
  
 */
 
-class ApplicationFlowController: FlowController {
+class ApplicationFlowController {
 
     // MARK: - Flow Controller conformance
     
@@ -36,12 +36,14 @@ class ApplicationFlowController: FlowController {
         self.navigationController = navigationController
         
         // Make HomeScene the navigationController's rootController
-        let rootController = HomeScene(flowDelegate: self)
+        let rootController = HomeScene()
+        
+        // Assign all root scene user interactors
+        // One user interactor per flow
+        rootController.tapUserInteractor = HomeSceneToSecondSceneTapUserInteractor(viewController: rootController, flowDelegate: self)
         
         navigationController.show(rootController, sender: nil)
-        
-        navigationController.interactivePopGestureRecognizer?.delegate = nil
-    
+            
     }
     
 }

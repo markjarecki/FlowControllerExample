@@ -6,20 +6,18 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
-import FlowControllerCore
+import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var flowController: FlowController?
+    var flowController: ApplicationFlowController?
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Set up the ApplicationFlowController's navigationController's properties
         let navigationController = ApplicationNavigationController()
-        navigationController.isToolbarHidden = true
-        navigationController.isNavigationBarHidden = true
         
         // Retain the flow controller
         flowController = ApplicationFlowController(navigationController: navigationController)

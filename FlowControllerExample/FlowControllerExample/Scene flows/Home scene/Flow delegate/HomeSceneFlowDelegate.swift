@@ -6,6 +6,7 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
+import HomeSceneFramework
 import SharedEntities
 
 public protocol HomeSceneFlowDelegate: class {
