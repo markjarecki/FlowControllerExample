@@ -31,8 +31,8 @@ extension ApplicationFlowController: HomeSceneFlowDelegate {
         
         navigationController.delegate = scene.tapUserInteractor
         
-        // Add the destination to the stack - without an animation
-        navigationController.pushViewController(secondScene, animated: false)
+        // Add the destination to the stack - with built-in animation
+        navigationController.pushViewController(secondScene, animated: true)
         
     }
 
