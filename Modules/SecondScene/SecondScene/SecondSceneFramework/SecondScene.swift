@@ -15,6 +15,6 @@ open class SecondScene: BlueViewController {
     // User interactors encapsulated user interaction with the view controller
     // Triggers flows to the scene specified in the flow controller
     // This flow's transition can be a jump cut (no animation), animated, or interactive, depending on the implementation given by the flow controller
-    public var edgeswipeUserInteractor: (UIPercentDrivenInteractiveTransition & UINavigationControllerDelegate)?
+    public var edgeswipeUserInteractor: (UIViewControllerInteractiveTransitioning & UINavigationControllerDelegate)?
 
 }
