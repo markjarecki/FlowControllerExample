@@ -44,9 +44,9 @@ class ApplicationFlowController {
             
             guard let homeScene = viewController as? HomeScene else { return }
             
-                flowDelegate.flow(tapFromHomeScene: homeScene, content: Colours(name: homeScene.view.backgroundColor!.description) )
+            flowDelegate.flow(tapFromHomeScene: homeScene, content: Colours(name: homeScene.view.backgroundColor!.description) )
             
-            }
+        }
         
         navigationController.show(rootController, sender: nil)
             

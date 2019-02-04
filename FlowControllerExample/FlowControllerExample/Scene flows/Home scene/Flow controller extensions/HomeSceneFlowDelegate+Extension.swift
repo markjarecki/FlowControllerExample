@@ -17,7 +17,7 @@ import SecondSceneFramework
 
 /*
  
- Extension defines the ApplicationFlowController's handling of a flow trigger from the HomeScene view module.
+ Extension defines the ApplicationFlowController's flow delegate method for HomeScene.
  
 */
 
@@ -34,15 +34,15 @@ extension ApplicationFlowController: HomeSceneFlowDelegate {
         // One user interactor per flow
         secondScene.edgeswipeUserInteractor = SecondSceneToHomeSceneEdgeSwipeUserInteractor(viewController: secondScene, flowDelegate: self){ viewController, flowDelegate in
             
-                guard let secondScene = viewController as? SecondScene else { return }
-            
-                flowDelegate.flow(edgeswipeFromSecondScene: secondScene, content: Colours(name: secondScene.view.backgroundColor!.description) )
-            
-            }
+            guard let secondScene = viewController as? SecondScene else { return }
         
-        navigationController.delegate = scene.tapUserInteractor
+            flowDelegate.flow(edgeswipeFromSecondScene: secondScene, content: Colours(name: secondScene.view.backgroundColor!.description) )
+        
+        }
         
         // Add the `to` to the stack - with built-in animation
+        navigationController.delegate = scene.tapUserInteractor
+        
         navigationController.pushViewController(secondScene, animated: true)
         
     }

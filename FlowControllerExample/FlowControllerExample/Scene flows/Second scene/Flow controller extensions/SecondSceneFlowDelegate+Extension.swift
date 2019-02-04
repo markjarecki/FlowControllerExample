@@ -14,7 +14,7 @@ import SecondSceneFramework
 
 /*
  
- Extension defines the ApplicationFlowController's handling of a flow trigger from the SecondScene view module.
+ Extension defines the ApplicationFlowController's flow delegate method for SecondScene.
  
  */
 

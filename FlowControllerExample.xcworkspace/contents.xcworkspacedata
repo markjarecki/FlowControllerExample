@@ -10,6 +10,16 @@
       <Group
          location = "container:"
          name = "Common">
+         <Group
+            location = "container:"
+            name = "Base view frameworks">
+            <FileRef
+               location = "group:Modules/RedViewModule/RedViewModule/RedViewModule.xcodeproj">
+            </FileRef>
+            <FileRef
+               location = "group:Modules/BlueViewModule/BlueViewModule/BlueViewModule.xcodeproj">
+            </FileRef>
+         </Group>
          <FileRef
             location = "group:Modules/UserInteractors/UserInteractors/UserInteractors.xcodeproj">
          </FileRef>
@@ -22,16 +32,6 @@
          </FileRef>
          <FileRef
             location = "group:Modules/SecondScene/SecondScene/SecondScene.xcodeproj">
-         </FileRef>
-      </Group>
-      <Group
-         location = "container:"
-         name = "Base view frameworks">
-         <FileRef
-            location = "group:Modules/RedViewModule/RedViewModule/RedViewModule.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:Modules/BlueViewModule/BlueViewModule/BlueViewModule.xcodeproj">
          </FileRef>
       </Group>
    </Group>
