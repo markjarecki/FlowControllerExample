@@ -6,8 +6,11 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
+// Generic user interactors
+import UserInteractors
+
+// Scene
 import SecondSceneFramework
-import SharedEntities
 
 /*
  

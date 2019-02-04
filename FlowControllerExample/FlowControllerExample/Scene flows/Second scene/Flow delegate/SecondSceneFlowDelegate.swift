@@ -6,7 +6,6 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
-import SharedEntities
 import SecondSceneFramework
 
 public protocol SecondSceneFlowDelegate: class {

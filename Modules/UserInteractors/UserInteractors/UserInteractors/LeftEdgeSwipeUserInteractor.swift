@@ -20,27 +20,27 @@ import UIKit
  
 */
 
-public class LeftEdgeSwipeUserInteractor<FlowDelegateType>: UIPercentDrivenInteractiveTransition {
+open class LeftEdgeSwipeUserInteractor<FlowDelegateType>: UIPercentDrivenInteractiveTransition {
     
     // MARK: - Properties
     
-    let viewController: UIViewController
+    public let viewController: UIViewController
     
-    let flowDelegate: FlowDelegateType
+    public let flowDelegate: FlowDelegateType
     
-    let flowClosure: (UIViewController, FlowDelegateType) -> Void
+    public let flowClosure: (UIViewController, FlowDelegateType) -> Void
     
     // MARK: Interaction in progress flag
     
-    fileprivate(set) var interactionInProgress = false
+    fileprivate(set) public var interactionInProgress = false
     
     // MARK: Gesture recognizer
     
-    private let leftEdgeSwipeGesture = UIScreenEdgePanGestureRecognizer()
+    public let leftEdgeSwipeGesture = UIScreenEdgePanGestureRecognizer()
     
     // MARK: - Initialisers
     
-    init(viewController: UIViewController, flowDelegate: FlowDelegateType, flowClosure: @escaping (UIViewController, FlowDelegateType) -> Void) {
+    public init(viewController: UIViewController, flowDelegate: FlowDelegateType, flowClosure: @escaping (UIViewController, FlowDelegateType) -> Void) {
         
         self.viewController = viewController
         self.flowDelegate = flowDelegate

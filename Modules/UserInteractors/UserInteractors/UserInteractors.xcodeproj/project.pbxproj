@@ -7,184 +7,187 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DAB3E6ED2203078500CE6E3A /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E6E32203078500CE6E3A /* SharedEntities.framework */; };
-		DAB3E6F22203078500CE6E3A /* SharedEntitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E6F12203078500CE6E3A /* SharedEntitiesTests.swift */; };
-		DAB3E6F42203078500CE6E3A /* SharedEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB3E6E62203078500CE6E3A /* SharedEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAB3E700220307B600CE6E3A /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E6FF220307B600CE6E3A /* Colours.swift */; };
+		DA8AD9F92208554700E98093 /* UserInteractors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8AD9EF2208554700E98093 /* UserInteractors.framework */; };
+		DA8AD9FE2208554700E98093 /* UserInteractorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AD9FD2208554700E98093 /* UserInteractorsTests.swift */; };
+		DA8ADA002208554700E98093 /* UserInteractors.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8AD9F22208554700E98093 /* UserInteractors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA8ADA112208564500E98093 /* TapUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ADA102208564500E98093 /* TapUserInteractor.swift */; };
+		DA8ADA132208564D00E98093 /* LeftEdgeSwipeUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ADA122208564D00E98093 /* LeftEdgeSwipeUserInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DAB3E6EE2203078500CE6E3A /* PBXContainerItemProxy */ = {
+		DA8AD9FA2208554700E98093 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DAB3E6DA2203078500CE6E3A /* Project object */;
+			containerPortal = DA8AD9E62208554700E98093 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DAB3E6E22203078500CE6E3A;
-			remoteInfo = SharedEntities;
+			remoteGlobalIDString = DA8AD9EE2208554700E98093;
+			remoteInfo = UserInteractors;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DAB3E6E32203078500CE6E3A /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAB3E6E62203078500CE6E3A /* SharedEntities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedEntities.h; sourceTree = "<group>"; };
-		DAB3E6E72203078500CE6E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAB3E6EC2203078500CE6E3A /* SharedEntitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedEntitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAB3E6F12203078500CE6E3A /* SharedEntitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedEntitiesTests.swift; sourceTree = "<group>"; };
-		DAB3E6F32203078500CE6E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAB3E6FF220307B600CE6E3A /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		DA8AD9EF2208554700E98093 /* UserInteractors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInteractors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8AD9F22208554700E98093 /* UserInteractors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInteractors.h; sourceTree = "<group>"; };
+		DA8AD9F32208554700E98093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8AD9F82208554700E98093 /* UserInteractorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserInteractorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8AD9FD2208554700E98093 /* UserInteractorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractorsTests.swift; sourceTree = "<group>"; };
+		DA8AD9FF2208554700E98093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8ADA102208564500E98093 /* TapUserInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapUserInteractor.swift; sourceTree = "<group>"; };
+		DA8ADA122208564D00E98093 /* LeftEdgeSwipeUserInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftEdgeSwipeUserInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DAB3E6E02203078500CE6E3A /* Frameworks */ = {
+		DA8AD9EC2208554700E98093 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAB3E6E92203078500CE6E3A /* Frameworks */ = {
+		DA8AD9F52208554700E98093 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB3E6ED2203078500CE6E3A /* SharedEntities.framework in Frameworks */,
+				DA8AD9F92208554700E98093 /* UserInteractors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DAB3E6D92203078500CE6E3A = {
+		DA8AD9E52208554700E98093 = {
 			isa = PBXGroup;
 			children = (
-				DAB3E6E52203078500CE6E3A /* SharedEntities */,
-				DAB3E6F02203078500CE6E3A /* SharedEntitiesTests */,
-				DAB3E6E42203078500CE6E3A /* Products */,
+				DA8AD9F12208554700E98093 /* UserInteractors */,
+				DA8AD9FC2208554700E98093 /* UserInteractorsTests */,
+				DA8AD9F02208554700E98093 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DAB3E6E42203078500CE6E3A /* Products */ = {
+		DA8AD9F02208554700E98093 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DAB3E6E32203078500CE6E3A /* SharedEntities.framework */,
-				DAB3E6EC2203078500CE6E3A /* SharedEntitiesTests.xctest */,
+				DA8AD9EF2208554700E98093 /* UserInteractors.framework */,
+				DA8AD9F82208554700E98093 /* UserInteractorsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DAB3E6E52203078500CE6E3A /* SharedEntities */ = {
+		DA8AD9F12208554700E98093 /* UserInteractors */ = {
 			isa = PBXGroup;
 			children = (
-				DAB3E6FF220307B600CE6E3A /* Colours.swift */,
-				DAB3E6E62203078500CE6E3A /* SharedEntities.h */,
-				DAB3E6E72203078500CE6E3A /* Info.plist */,
+				DA8ADA102208564500E98093 /* TapUserInteractor.swift */,
+				DA8ADA122208564D00E98093 /* LeftEdgeSwipeUserInteractor.swift */,
+				DA8AD9F22208554700E98093 /* UserInteractors.h */,
+				DA8AD9F32208554700E98093 /* Info.plist */,
 			);
-			path = SharedEntities;
+			path = UserInteractors;
 			sourceTree = "<group>";
 		};
-		DAB3E6F02203078500CE6E3A /* SharedEntitiesTests */ = {
+		DA8AD9FC2208554700E98093 /* UserInteractorsTests */ = {
 			isa = PBXGroup;
 			children = (
-				DAB3E6F12203078500CE6E3A /* SharedEntitiesTests.swift */,
-				DAB3E6F32203078500CE6E3A /* Info.plist */,
+				DA8AD9FD2208554700E98093 /* UserInteractorsTests.swift */,
+				DA8AD9FF2208554700E98093 /* Info.plist */,
 			);
-			path = SharedEntitiesTests;
+			path = UserInteractorsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DAB3E6DE2203078500CE6E3A /* Headers */ = {
+		DA8AD9EA2208554700E98093 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB3E6F42203078500CE6E3A /* SharedEntities.h in Headers */,
+				DA8ADA002208554700E98093 /* UserInteractors.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DAB3E6E22203078500CE6E3A /* SharedEntities */ = {
+		DA8AD9EE2208554700E98093 /* UserInteractors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAB3E6F72203078500CE6E3A /* Build configuration list for PBXNativeTarget "SharedEntities" */;
+			buildConfigurationList = DA8ADA032208554700E98093 /* Build configuration list for PBXNativeTarget "UserInteractors" */;
 			buildPhases = (
-				DAB3E6DE2203078500CE6E3A /* Headers */,
-				DAB3E6DF2203078500CE6E3A /* Sources */,
-				DAB3E6E02203078500CE6E3A /* Frameworks */,
-				DAB3E6E12203078500CE6E3A /* Resources */,
+				DA8AD9EA2208554700E98093 /* Headers */,
+				DA8AD9EB2208554700E98093 /* Sources */,
+				DA8AD9EC2208554700E98093 /* Frameworks */,
+				DA8AD9ED2208554700E98093 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SharedEntities;
-			productName = SharedEntities;
-			productReference = DAB3E6E32203078500CE6E3A /* SharedEntities.framework */;
+			name = UserInteractors;
+			productName = UserInteractors;
+			productReference = DA8AD9EF2208554700E98093 /* UserInteractors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DAB3E6EB2203078500CE6E3A /* SharedEntitiesTests */ = {
+		DA8AD9F72208554700E98093 /* UserInteractorsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAB3E6FA2203078500CE6E3A /* Build configuration list for PBXNativeTarget "SharedEntitiesTests" */;
+			buildConfigurationList = DA8ADA062208554700E98093 /* Build configuration list for PBXNativeTarget "UserInteractorsTests" */;
 			buildPhases = (
-				DAB3E6E82203078500CE6E3A /* Sources */,
-				DAB3E6E92203078500CE6E3A /* Frameworks */,
-				DAB3E6EA2203078500CE6E3A /* Resources */,
+				DA8AD9F42208554700E98093 /* Sources */,
+				DA8AD9F52208554700E98093 /* Frameworks */,
+				DA8AD9F62208554700E98093 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DAB3E6EF2203078500CE6E3A /* PBXTargetDependency */,
+				DA8AD9FB2208554700E98093 /* PBXTargetDependency */,
 			);
-			name = SharedEntitiesTests;
-			productName = SharedEntitiesTests;
-			productReference = DAB3E6EC2203078500CE6E3A /* SharedEntitiesTests.xctest */;
+			name = UserInteractorsTests;
+			productName = UserInteractorsTests;
+			productReference = DA8AD9F82208554700E98093 /* UserInteractorsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DAB3E6DA2203078500CE6E3A /* Project object */ = {
+		DA8AD9E62208554700E98093 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Mark Jarecki";
 				TargetAttributes = {
-					DAB3E6E22203078500CE6E3A = {
+					DA8AD9EE2208554700E98093 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
-					DAB3E6EB2203078500CE6E3A = {
+					DA8AD9F72208554700E98093 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = DAB3E6DD2203078500CE6E3A /* Build configuration list for PBXProject "SharedEntities" */;
+			buildConfigurationList = DA8AD9E92208554700E98093 /* Build configuration list for PBXProject "UserInteractors" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = DAB3E6D92203078500CE6E3A;
-			productRefGroup = DAB3E6E42203078500CE6E3A /* Products */;
+			mainGroup = DA8AD9E52208554700E98093;
+			productRefGroup = DA8AD9F02208554700E98093 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DAB3E6E22203078500CE6E3A /* SharedEntities */,
-				DAB3E6EB2203078500CE6E3A /* SharedEntitiesTests */,
+				DA8AD9EE2208554700E98093 /* UserInteractors */,
+				DA8AD9F72208554700E98093 /* UserInteractorsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DAB3E6E12203078500CE6E3A /* Resources */ = {
+		DA8AD9ED2208554700E98093 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAB3E6EA2203078500CE6E3A /* Resources */ = {
+		DA8AD9F62208554700E98093 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,34 +197,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DAB3E6DF2203078500CE6E3A /* Sources */ = {
+		DA8AD9EB2208554700E98093 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB3E700220307B600CE6E3A /* Colours.swift in Sources */,
+				DA8ADA132208564D00E98093 /* LeftEdgeSwipeUserInteractor.swift in Sources */,
+				DA8ADA112208564500E98093 /* TapUserInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAB3E6E82203078500CE6E3A /* Sources */ = {
+		DA8AD9F42208554700E98093 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB3E6F22203078500CE6E3A /* SharedEntitiesTests.swift in Sources */,
+				DA8AD9FE2208554700E98093 /* UserInteractorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DAB3E6EF2203078500CE6E3A /* PBXTargetDependency */ = {
+		DA8AD9FB2208554700E98093 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DAB3E6E22203078500CE6E3A /* SharedEntities */;
-			targetProxy = DAB3E6EE2203078500CE6E3A /* PBXContainerItemProxy */;
+			target = DA8AD9EE2208554700E98093 /* UserInteractors */;
+			targetProxy = DA8AD9FA2208554700E98093 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		DAB3E6F52203078500CE6E3A /* Debug */ = {
+		DA8ADA012208554700E98093 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,7 +289,7 @@
 			};
 			name = Debug;
 		};
-		DAB3E6F62203078500CE6E3A /* Release */ = {
+		DA8ADA022208554700E98093 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -343,7 +347,7 @@
 			};
 			name = Release;
 		};
-		DAB3E6F82203078500CE6E3A /* Debug */ = {
+		DA8ADA042208554700E98093 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -354,14 +358,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SharedEntities/Info.plist;
+				INFOPLIST_FILE = UserInteractors/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.SharedEntities;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.UserInteractors;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -370,7 +374,7 @@
 			};
 			name = Debug;
 		};
-		DAB3E6F92203078500CE6E3A /* Release */ = {
+		DA8ADA052208554700E98093 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -381,14 +385,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SharedEntities/Info.plist;
+				INFOPLIST_FILE = UserInteractors/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.SharedEntities;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.UserInteractors;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -396,38 +400,38 @@
 			};
 			name = Release;
 		};
-		DAB3E6FB2203078500CE6E3A /* Debug */ = {
+		DA8ADA072208554700E98093 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2J2MP846S;
-				INFOPLIST_FILE = SharedEntitiesTests/Info.plist;
+				INFOPLIST_FILE = UserInteractorsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.SharedEntitiesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.UserInteractorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DAB3E6FC2203078500CE6E3A /* Release */ = {
+		DA8ADA082208554700E98093 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2J2MP846S;
-				INFOPLIST_FILE = SharedEntitiesTests/Info.plist;
+				INFOPLIST_FILE = UserInteractorsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.SharedEntitiesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fluxom.UserInteractorsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -437,34 +441,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DAB3E6DD2203078500CE6E3A /* Build configuration list for PBXProject "SharedEntities" */ = {
+		DA8AD9E92208554700E98093 /* Build configuration list for PBXProject "UserInteractors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DAB3E6F52203078500CE6E3A /* Debug */,
-				DAB3E6F62203078500CE6E3A /* Release */,
+				DA8ADA012208554700E98093 /* Debug */,
+				DA8ADA022208554700E98093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAB3E6F72203078500CE6E3A /* Build configuration list for PBXNativeTarget "SharedEntities" */ = {
+		DA8ADA032208554700E98093 /* Build configuration list for PBXNativeTarget "UserInteractors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DAB3E6F82203078500CE6E3A /* Debug */,
-				DAB3E6F92203078500CE6E3A /* Release */,
+				DA8ADA042208554700E98093 /* Debug */,
+				DA8ADA052208554700E98093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAB3E6FA2203078500CE6E3A /* Build configuration list for PBXNativeTarget "SharedEntitiesTests" */ = {
+		DA8ADA062208554700E98093 /* Build configuration list for PBXNativeTarget "UserInteractorsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DAB3E6FB2203078500CE6E3A /* Debug */,
-				DAB3E6FC2203078500CE6E3A /* Release */,
+				DA8ADA072208554700E98093 /* Debug */,
+				DA8ADA082208554700E98093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DAB3E6DA2203078500CE6E3A /* Project object */;
+	rootObject = DA8AD9E62208554700E98093 /* Project object */;
 }

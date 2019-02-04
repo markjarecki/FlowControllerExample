@@ -6,13 +6,10 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
-// Scene interchange entities
-import SharedEntities
-
-// Origin scene
+// From scene
 import SecondSceneFramework
 
-// Destination scene
+// To scene
 import HomeSceneFramework
 
 final class SecondSceneToHomeSceneEdgeSwipeAnimator: NSObject, UIViewControllerAnimatedTransitioning {

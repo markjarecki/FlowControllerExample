@@ -6,6 +6,9 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
+// Generic user interactors
+import UserInteractors
+
 // From scene
 import SecondSceneFramework
 

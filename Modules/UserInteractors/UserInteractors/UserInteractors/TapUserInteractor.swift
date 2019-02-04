@@ -8,23 +8,23 @@
 
 import UIKit
 
-public class TapUserInteractor<FlowDelegateType>: NSObject {
+open class TapUserInteractor<FlowDelegateType>: NSObject {
     
     // MARK: - Properties
     
-    let viewController: UIViewController
+    public let viewController: UIViewController
     
-    let flowDelegate: FlowDelegateType
+    public let flowDelegate: FlowDelegateType
     
-    let flowClosure: (UIViewController, FlowDelegateType) -> Void
+    public let flowClosure: (UIViewController, FlowDelegateType) -> Void
     
     // MARK: Gesture recognizer
     
-    private let tapGesture = UITapGestureRecognizer()
+    public let tapGesture = UITapGestureRecognizer()
     
     // MARK: - Initialisers
     
-    init(viewController: UIViewController, flowDelegate: FlowDelegateType, flowClosure: @escaping (UIViewController, FlowDelegateType) -> Void) {
+    public init(viewController: UIViewController, flowDelegate: FlowDelegateType, flowClosure: @escaping (UIViewController, FlowDelegateType) -> Void) {
         
         self.viewController = viewController
         self.flowDelegate = flowDelegate

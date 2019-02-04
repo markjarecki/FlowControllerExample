@@ -7,7 +7,6 @@
 //
 
 import HomeSceneFramework
-import SharedEntities
 
 public protocol HomeSceneFlowDelegate: class {
 

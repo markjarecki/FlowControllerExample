@@ -1,15 +1,15 @@
 //
-//  FlowControllerCoreTests.swift
-//  FlowControllerCoreTests
+//  UserInteractorsTests.swift
+//  UserInteractorsTests
 //
-//  Created by Mark Jarecki on 29/1/19.
+//  Created by Mark Jarecki on 4/2/19.
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
 import XCTest
-@testable import FlowControllerCore
+@testable import UserInteractors
 
-class FlowControllerCoreTests: XCTestCase {
+class UserInteractorsTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

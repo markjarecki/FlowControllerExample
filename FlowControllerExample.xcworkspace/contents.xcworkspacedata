@@ -6,9 +6,9 @@
       name = "Dependencies">
       <Group
          location = "container:"
-         name = "Shared">
+         name = "Common">
          <FileRef
-            location = "group:Modules/SharedEntities/SharedEntities/SharedEntities.xcodeproj">
+            location = "group:Modules/UserInteractors/UserInteractors/UserInteractors.xcodeproj">
          </FileRef>
       </Group>
       <Group
