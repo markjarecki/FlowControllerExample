@@ -6,7 +6,8 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
-import FlowControllerCore
+import SharedEntities
+
 import HomeSceneFramework
 
 /*
@@ -40,7 +41,13 @@ class ApplicationFlowController {
         
         // Assign all root scene user interactors
         // One user interactor per flow
-        rootController.tapUserInteractor = HomeSceneToSecondSceneTapUserInteractor(viewController: rootController, flowDelegate: self)
+        rootController.tapUserInteractor = HomeSceneToSecondSceneTapUserInteractor(viewController: rootController, flowDelegate: self){ viewController, flowDelegate in
+            
+            guard let homeScene = viewController as? HomeScene else { return }
+            
+                flowDelegate.flow(tapFromHomeScene: homeScene, content: Colours(name: homeScene.view.backgroundColor!.description) )
+            
+            }
         
         navigationController.show(rootController, sender: nil)
             

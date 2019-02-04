@@ -6,101 +6,31 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
-// Scene interchange entities
-import SharedEntities
-
 // From scene
 import SecondSceneFramework
 
-final class SecondSceneToHomeSceneEdgeSwipeUserInteractor: UIPercentDrivenInteractiveTransition {
-    
-    // MARK: - Properties
-    
-    let viewController: UIViewController
-    
-    let flowDelegate: SecondSceneFlowDelegate
-    
-    // MARK: Interaction in progress flag
-    
-    fileprivate(set) var interactionInProgress = false
-    
-    // MARK: Gesture recognizer
-    
-    private let leftEdgeSwipeGesture = UIScreenEdgePanGestureRecognizer()
+// To scene
+import HomeSceneFramework
 
-    // MARK: - Initialisers
+final class SecondSceneToHomeSceneEdgeSwipeUserInteractor: LeftEdgeSwipeUserInteractor<SecondSceneFlowDelegate>, UINavigationControllerDelegate {
     
-    init(viewController: UIViewController, flowDelegate: SecondSceneFlowDelegate) {
-            
-        self.viewController = viewController
-        self.flowDelegate = flowDelegate
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
-        super.init()
-                
-        prepareGestureRecogniser(in: viewController.view)
+        // Ensure transition conditions are correct
+        guard operation == .pop,
+            fromVC is SecondScene,
+            toVC is HomeScene else { return nil }
+        
+        return SecondSceneToHomeSceneEdgeSwipeAnimator(interactor: self)
         
     }
     
-    // MARK: - Private helper methods
-    
-    private func prepareGestureRecogniser(in view: UIView) {
+    func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         
-        // Set up gesture recognizer
-        leftEdgeSwipeGesture.addTarget(self, action: #selector(handler(pan:)))
-        leftEdgeSwipeGesture.edges = .left
-        viewController.view.addGestureRecognizer(leftEdgeSwipeGesture)
-    
-    }
-    
-    // MARK: - Gesture handler
-    
-    @objc private func handler(pan: UIScreenEdgePanGestureRecognizer) {
-    
-        guard let secondScene = viewController as? SecondScene else { return }
+        // Ensure interaction has been triggered by the interactor
+        guard interactionInProgress == true else { return nil }
         
-        let translation = pan.translation(in: pan.view!)
-        
-        // Distance travelled
-        let distance = translation.x / pan.view!.bounds.width
-        
-        switch (pan.state) {
-            
-            case .began:
-
-                interactionInProgress = true
-                
-                // Start transition
-                // Call the flow outlet for this interaction event
-                flowDelegate.flow(edgeswipeFromSecondScene: secondScene, content: Colours(name: secondScene.view.backgroundColor!.description) )
-            
-            case .changed:
-                
-                update(distance)
-            
-            case .cancelled:
-                
-                interactionInProgress = false
-                
-                cancel()
-            
-            case .ended:
-                
-                interactionInProgress = false
-                                
-                if pan.velocity(in: pan.view).x > 300 {
-                    
-                    finish()
-                    
-                    return
-                    
-                }
-                
-                distance > 0.5 ? finish() : cancel()
-            
-            // .failed
-            default: break
-            
-        }
+        return self
         
     }
     

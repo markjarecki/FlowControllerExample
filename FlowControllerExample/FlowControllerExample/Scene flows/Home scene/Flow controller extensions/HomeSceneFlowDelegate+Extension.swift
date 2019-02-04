@@ -27,7 +27,13 @@ extension ApplicationFlowController: HomeSceneFlowDelegate {
         
         // Assign all destination scene user interactors
         // One user interactor per flow
-        secondScene.edgeswipeUserInteractor = SecondSceneToHomeSceneEdgeSwipeUserInteractor(viewController: secondScene, flowDelegate: self)
+        secondScene.edgeswipeUserInteractor = SecondSceneToHomeSceneEdgeSwipeUserInteractor(viewController: secondScene, flowDelegate: self){ viewController, flowDelegate in
+            
+                guard let secondScene = viewController as? SecondScene else { return }
+            
+                flowDelegate.flow(edgeswipeFromSecondScene: secondScene, content: Colours(name: secondScene.view.backgroundColor!.description) )
+            
+            }
         
         navigationController.delegate = scene.tapUserInteractor
         
