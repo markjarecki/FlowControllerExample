@@ -7,22 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA1413F32205C75200D1B31B /* SecondSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1413F22205C75200D1B31B /* SecondSceneFlowDelegate.swift */; };
-		DA1414002207700C00D1B31B /* HomeSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1413FF2207700C00D1B31B /* HomeSceneFlowDelegate.swift */; };
-		DA141403220770B500D1B31B /* HomeSceneToSecondSceneTapUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA141402220770B500D1B31B /* HomeSceneToSecondSceneTapUserInteractor.swift */; };
 		DA36366322006E4E00424B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36366222006E4E00424B55 /* AppDelegate.swift */; };
 		DA36366522006E4E00424B55 /* ApplicationFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36366422006E4E00424B55 /* ApplicationFlowController.swift */; };
 		DA36366A22006E4F00424B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA36366922006E4F00424B55 /* Assets.xcassets */; };
 		DA36366D22006E4F00424B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA36366B22006E4F00424B55 /* LaunchScreen.storyboard */; };
 		DA36367822006E4F00424B55 /* FlowControllerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36367722006E4F00424B55 /* FlowControllerExampleTests.swift */; };
-		DA36373A2200804800424B55 /* RedViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637382200803600424B55 /* RedViewModuleFramework.framework */; };
-		DA36373B2200804800424B55 /* RedViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637382200803600424B55 /* RedViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA3637A722008A7D00424B55 /* BlueViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */; };
-		DA3637A822008A7D00424B55 /* BlueViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA5D404F2209C1E50054635F /* SecondSceneToHomeSceneEdgeSwipe+InteractorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D404E2209C1E50054635F /* SecondSceneToHomeSceneEdgeSwipe+InteractorExtension.swift */; };
+		DA5D40852209CD3B0054635F /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D40842209CD3B0054635F /* SharedEntities.framework */; };
+		DA5D40862209CD420054635F /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D40842209CD3B0054635F /* SharedEntities.framework */; };
+		DA5D40872209CD420054635F /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D40842209CD3B0054635F /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA75E3DE2205138600D864E1 /* ApplicationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75E3DD2205138600D864E1 /* ApplicationNavigationController.swift */; };
-		DA8ADA0A2208558E00E98093 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ADA092208558E00E98093 /* Colour.swift */; };
-		DA8ADA162208567800E98093 /* UserInteractors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8ADA142208566D00E98093 /* UserInteractors.framework */; };
-		DA8ADA172208567800E98093 /* UserInteractors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA8ADA142208566D00E98093 /* UserInteractors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB038EA2204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB038E92204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift */; };
 		DAB3E77322030F4900CE6E3A /* HomeSceneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */; };
 		DAB3E77422030F4900CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -30,7 +24,6 @@
 		DAB3E7E42203150000CE6E3A /* SecondSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB3E7EB2203205900CE6E3A /* HomeSceneFlowDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate+Extension.swift */; };
 		DAB3E7F62203249600CE6E3A /* SecondSceneFlowDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate+Extension.swift */; };
-		DAB3E832220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E831220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeUserInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +43,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DA5D40872209CD420054635F /* SharedEntities.framework in Embed Frameworks */,
 				DAB3E77422030F4900CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */,
 				DAB3E7E42203150000CE6E3A /* SecondSceneFramework.framework in Embed Frameworks */,
-				DA3637A822008A7D00424B55 /* BlueViewModuleFramework.framework in Embed Frameworks */,
-				DA8ADA172208567800E98093 /* UserInteractors.framework in Embed Frameworks */,
-				DA36373B2200804800424B55 /* RedViewModuleFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,9 +53,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DA1413F22205C75200D1B31B /* SecondSceneFlowDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSceneFlowDelegate.swift; sourceTree = "<group>"; };
-		DA1413FF2207700C00D1B31B /* HomeSceneFlowDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSceneFlowDelegate.swift; sourceTree = "<group>"; };
-		DA141402220770B500D1B31B /* HomeSceneToSecondSceneTapUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneToSecondSceneTapUserInteractor.swift; sourceTree = "<group>"; };
 		DA36365F22006E4E00424B55 /* FlowControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA36366222006E4E00424B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA36366422006E4E00424B55 /* ApplicationFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowController.swift; sourceTree = "<group>"; };
@@ -74,17 +62,14 @@
 		DA36367322006E4F00424B55 /* FlowControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA36367722006E4F00424B55 /* FlowControllerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerExampleTests.swift; sourceTree = "<group>"; };
 		DA36367922006E4F00424B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA3637382200803600424B55 /* RedViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlueViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5D404E2209C1E50054635F /* SecondSceneToHomeSceneEdgeSwipe+InteractorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SecondSceneToHomeSceneEdgeSwipe+InteractorExtension.swift"; sourceTree = "<group>"; };
+		DA5D40842209CD3B0054635F /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA75E3DD2205138600D864E1 /* ApplicationNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationNavigationController.swift; sourceTree = "<group>"; };
-		DA8ADA092208558E00E98093 /* Colour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colour.swift; sourceTree = "<group>"; };
-		DA8ADA142208566D00E98093 /* UserInteractors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UserInteractors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB038E92204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneToHomeSceneEdgeSwipeAnimator.swift; sourceTree = "<group>"; };
 		DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeSceneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SecondSceneFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeSceneFlowDelegate+Extension.swift"; sourceTree = "<group>"; };
 		DAB3E7F52203249600CE6E3A /* SecondSceneFlowDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecondSceneFlowDelegate+Extension.swift"; sourceTree = "<group>"; };
-		DAB3E831220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSceneToHomeSceneEdgeSwipeUserInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8ADA162208567800E98093 /* UserInteractors.framework in Frameworks */,
-				DA3637A722008A7D00424B55 /* BlueViewModuleFramework.framework in Frameworks */,
+				DA5D40862209CD420054635F /* SharedEntities.framework in Frameworks */,
+				DA5D40852209CD3B0054635F /* SharedEntities.framework in Frameworks */,
 				DAB3E7E32203150000CE6E3A /* SecondSceneFramework.framework in Frameworks */,
 				DAB3E77322030F4900CE6E3A /* HomeSceneFramework.framework in Frameworks */,
-				DA36373A2200804800424B55 /* RedViewModuleFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,14 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA1413F42206172200D1B31B /* Flows */ = {
-			isa = PBXGroup;
-			children = (
-				DAB038EB2204ACC300BF9E81 /* ToHomeSceneEdgeSwipe */,
-			);
-			path = Flows;
-			sourceTree = "<group>";
-		};
 		DA1413F52206175100D1B31B /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,19 +115,9 @@
 		DA1413F922061FB200D1B31B /* Home scene */ = {
 			isa = PBXGroup;
 			children = (
-				DA1413FA22061FBC00D1B31B /* Flow delegate */,
 				DA1413FB22061FCA00D1B31B /* Flow controller extensions */,
-				DA1413FC22061FDC00D1B31B /* Flows */,
 			);
 			path = "Home scene";
-			sourceTree = "<group>";
-		};
-		DA1413FA22061FBC00D1B31B /* Flow delegate */ = {
-			isa = PBXGroup;
-			children = (
-				DA1413FF2207700C00D1B31B /* HomeSceneFlowDelegate.swift */,
-			);
-			path = "Flow delegate";
 			sourceTree = "<group>";
 		};
 		DA1413FB22061FCA00D1B31B /* Flow controller extensions */ = {
@@ -160,14 +126,6 @@
 				DAB3E7EA2203205900CE6E3A /* HomeSceneFlowDelegate+Extension.swift */,
 			);
 			path = "Flow controller extensions";
-			sourceTree = "<group>";
-		};
-		DA1413FC22061FDC00D1B31B /* Flows */ = {
-			isa = PBXGroup;
-			children = (
-				DA1414012207705100D1B31B /* ToSecondSceneTap */,
-			);
-			path = Flows;
 			sourceTree = "<group>";
 		};
 		DA1413FD2206315C00D1B31B /* Navigation controller */ = {
@@ -184,14 +142,6 @@
 				DA36366422006E4E00424B55 /* ApplicationFlowController.swift */,
 			);
 			path = "Flow controller";
-			sourceTree = "<group>";
-		};
-		DA1414012207705100D1B31B /* ToSecondSceneTap */ = {
-			isa = PBXGroup;
-			children = (
-				DA141402220770B500D1B31B /* HomeSceneToSecondSceneTapUserInteractor.swift */,
-			);
-			path = ToSecondSceneTap;
 			sourceTree = "<group>";
 		};
 		DA36365622006E4E00424B55 = {
@@ -219,7 +169,6 @@
 				DA36366222006E4E00424B55 /* AppDelegate.swift */,
 				DA1413FE2206317500D1B31B /* Flow controller */,
 				DA1413FD2206315C00D1B31B /* Navigation controller */,
-				DA8ADA0B220855B500E98093 /* Flow entities */,
 				DAB3E82B220460A600CE6E3A /* Scene flows */,
 				DA1413F52206175100D1B31B /* Bundle */,
 			);
@@ -238,35 +187,17 @@
 		DA3636D72200708800424B55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA8ADA142208566D00E98093 /* UserInteractors.framework */,
+				DA5D40842209CD3B0054635F /* SharedEntities.framework */,
 				DAB3E7E1220314F800CE6E3A /* SecondSceneFramework.framework */,
 				DAB3E77122030F4400CE6E3A /* HomeSceneFramework.framework */,
-				DA3637A522008A4200424B55 /* BlueViewModuleFramework.framework */,
-				DA3637382200803600424B55 /* RedViewModuleFramework.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DA75E3E02205BFD500D864E1 /* Flow delegate */ = {
-			isa = PBXGroup;
-			children = (
-				DA1413F22205C75200D1B31B /* SecondSceneFlowDelegate.swift */,
-			);
-			path = "Flow delegate";
-			sourceTree = "<group>";
-		};
-		DA8ADA0B220855B500E98093 /* Flow entities */ = {
-			isa = PBXGroup;
-			children = (
-				DA8ADA092208558E00E98093 /* Colour.swift */,
-			);
-			path = "Flow entities";
 			sourceTree = "<group>";
 		};
 		DAB038EB2204ACC300BF9E81 /* ToHomeSceneEdgeSwipe */ = {
 			isa = PBXGroup;
 			children = (
-				DAB3E831220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeUserInteractor.swift */,
+				DA5D404E2209C1E50054635F /* SecondSceneToHomeSceneEdgeSwipe+InteractorExtension.swift */,
 				DAB038E92204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift */,
 			);
 			path = ToHomeSceneEdgeSwipe;
@@ -284,9 +215,8 @@
 		DAB3E82C220460CB00CE6E3A /* Second scene */ = {
 			isa = PBXGroup;
 			children = (
-				DA75E3E02205BFD500D864E1 /* Flow delegate */,
 				DA1413F722061F8600D1B31B /* Flow controller extensions */,
-				DA1413F42206172200D1B31B /* Flows */,
+				DAB038EB2204ACC300BF9E81 /* ToHomeSceneEdgeSwipe */,
 			);
 			path = "Second scene";
 			sourceTree = "<group>";
@@ -393,15 +323,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA75E3DE2205138600D864E1 /* ApplicationNavigationController.swift in Sources */,
-				DA8ADA0A2208558E00E98093 /* Colour.swift in Sources */,
-				DA1413F32205C75200D1B31B /* SecondSceneFlowDelegate.swift in Sources */,
-				DAB3E832220496E500CE6E3A /* SecondSceneToHomeSceneEdgeSwipeUserInteractor.swift in Sources */,
+				DA5D404F2209C1E50054635F /* SecondSceneToHomeSceneEdgeSwipe+InteractorExtension.swift in Sources */,
 				DA36366522006E4E00424B55 /* ApplicationFlowController.swift in Sources */,
 				DAB3E7F62203249600CE6E3A /* SecondSceneFlowDelegate+Extension.swift in Sources */,
 				DAB038EA2204AB7400BF9E81 /* SecondSceneToHomeSceneEdgeSwipeAnimator.swift in Sources */,
 				DA36366322006E4E00424B55 /* AppDelegate.swift in Sources */,
-				DA1414002207700C00D1B31B /* HomeSceneFlowDelegate.swift in Sources */,
-				DA141403220770B500D1B31B /* HomeSceneToSecondSceneTapUserInteractor.swift in Sources */,
 				DAB3E7EB2203205900CE6E3A /* HomeSceneFlowDelegate+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

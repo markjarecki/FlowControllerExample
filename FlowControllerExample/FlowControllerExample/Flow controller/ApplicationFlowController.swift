@@ -38,15 +38,8 @@ class ApplicationFlowController {
         // Make HomeScene the navigationController's rootController
         let rootController = HomeScene()
         
-        // Assign all root scene user interactors
-        // One user interactor per flow
-        rootController.tapUserInteractor = HomeSceneToSecondSceneTapUserInteractor(viewController: rootController, flowDelegate: self){ viewController, flowDelegate in
-            
-            guard let homeScene = viewController as? HomeScene else { return }
-            
-            flowDelegate.flow(tapFromHomeScene: homeScene, content: Colours(name: homeScene.view.backgroundColor!.description) )
-            
-        }
+        // Assign all root scene flow interactors
+        rootController.tapFlowInteractor = HomeSceneToSecondSceneTapFlowInteractor(viewController: rootController, flowDelegate: self)
         
         navigationController.show(rootController, sender: nil)
             

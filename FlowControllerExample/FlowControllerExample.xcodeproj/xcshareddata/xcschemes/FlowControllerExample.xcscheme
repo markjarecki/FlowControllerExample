@@ -20,6 +20,20 @@
                ReferencedContainer = "container:FlowControllerExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DA5D40622209CBA40054635F"
+               BuildableName = "SharedEntitiesTests.xctest"
+               BlueprintName = "SharedEntitiesTests"
+               ReferencedContainer = "container:../Modules/SharedEntities/SharedEntities/SharedEntities.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,36 +56,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DA8AD9F72208554700E98093"
-               BuildableName = "UserInteractorsTests.xctest"
-               BlueprintName = "UserInteractorsTests"
-               ReferencedContainer = "container:../Modules/UserInteractors/UserInteractors/UserInteractors.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAB3E7B4220313E100CE6E3A"
-               BuildableName = "SecondSceneFrameworkTests.xctest"
-               BlueprintName = "SecondSceneFrameworkTests"
-               ReferencedContainer = "container:../Modules/SecondScene/SecondScene/SecondScene.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DA363717220078C500424B55"
-               BuildableName = "RedViewModuleFrameworkTests.xctest"
-               BlueprintName = "RedViewModuleFrameworkTests"
-               ReferencedContainer = "container:../Modules/RedViewModule/RedViewModule/RedViewModule.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "DAB3E73D22030AB000CE6E3A"
                BuildableName = "HomeSceneFrameworkTests.xctest"
                BlueprintName = "HomeSceneFrameworkTests"
@@ -82,10 +66,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DA3637752200862600424B55"
-               BuildableName = "BlueViewModuleFrameworkTests.xctest"
-               BlueprintName = "BlueViewModuleFrameworkTests"
-               ReferencedContainer = "container:../Modules/BlueViewModule/BlueViewModule/BlueViewModule.xcodeproj">
+               BlueprintIdentifier = "DA5D40622209CBA40054635F"
+               BuildableName = "SharedEntitiesTests.xctest"
+               BlueprintName = "SharedEntitiesTests"
+               ReferencedContainer = "container:../Modules/SharedEntities/SharedEntities/SharedEntities.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

@@ -6,15 +6,24 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
-import RedViewModuleFramework
+import UIKit
 
-open class HomeScene: RedViewController {
-
-    // MARK: User interactors
+open class HomeScene: UIViewController {
     
-    // User interactors encapsulated user interaction with the view controller
-    // Triggers flows to the scene specified in the flow controller
-    // This flow's transition can be a jump cut (no animation), animated, or intberactive, depending on the implementation given by the flow controller
-    public var tapUserInteractor: UINavigationControllerDelegate?
+    // MARK: - View lifecycle overrides
+    
+    override open func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        view.backgroundColor = .red
+        
+    }
+
+    // MARK: Flow interactors
+    
+    // Flow interactors encapsulated a view controller's user interaction which trigger a flow specified in the flow controller
+    // This flow's transition can be a jump cut (no animation), animated, or interactive, depending on the implementation given by the flow controller
+    public var tapFlowInteractor: NSObjectProtocol?
 
 }

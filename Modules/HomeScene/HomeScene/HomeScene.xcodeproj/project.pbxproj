@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA5D40482209C1300054635F /* HomeSceneToSecondSceneTapFlowInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D40462209C1300054635F /* HomeSceneToSecondSceneTapFlowInteractor.swift */; };
+		DA5D40492209C1300054635F /* HomeSceneFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D40472209C1300054635F /* HomeSceneFlowDelegate.swift */; };
+		DA5D407C2209CCAF0054635F /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D407A2209CCA50054635F /* SharedEntities.framework */; };
+		DA5D407D2209CCAF0054635F /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D407A2209CCA50054635F /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA5D407E2209CCEB0054635F /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D407A2209CCA50054635F /* SharedEntities.framework */; };
 		DAB3E71222030A7300CE6E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E71122030A7300CE6E3A /* AppDelegate.swift */; };
 		DAB3E71922030A7400CE6E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB3E71822030A7400CE6E3A /* Assets.xcassets */; };
 		DAB3E71C22030A7400CE6E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB3E71A22030A7400CE6E3A /* LaunchScreen.storyboard */; };
@@ -14,9 +19,6 @@
 		DAB3E73F22030AB000CE6E3A /* HomeSceneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E73622030AB000CE6E3A /* HomeSceneFramework.framework */; };
 		DAB3E74422030AB000CE6E3A /* HomeSceneFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E74322030AB000CE6E3A /* HomeSceneFrameworkTests.swift */; };
 		DAB3E74622030AB000CE6E3A /* HomeSceneFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB3E73822030AB000CE6E3A /* HomeSceneFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAB3E76A22030EE900CE6E3A /* RedViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E76922030EE900CE6E3A /* RedViewModuleFramework.framework */; };
-		DAB3E76B22030EEE00CE6E3A /* RedViewModuleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E76922030EE900CE6E3A /* RedViewModuleFramework.framework */; };
-		DAB3E76C22030EEE00CE6E3A /* RedViewModuleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E76922030EE900CE6E3A /* RedViewModuleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAB3E77622030F8300CE6E3A /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E77522030F8300CE6E3A /* HomeScene.swift */; };
 		DAB3E7772203110F00CE6E3A /* HomeSceneFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E73622030AB000CE6E3A /* HomeSceneFramework.framework */; };
 		DAB3E7782203110F00CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAB3E73622030AB000CE6E3A /* HomeSceneFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -53,7 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DAB3E76C22030EEE00CE6E3A /* RedViewModuleFramework.framework in Embed Frameworks */,
+				DA5D407D2209CCAF0054635F /* SharedEntities.framework in Embed Frameworks */,
 				DAB3E7782203110F00CE6E3A /* HomeSceneFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -62,6 +64,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA5D40462209C1300054635F /* HomeSceneToSecondSceneTapFlowInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSceneToSecondSceneTapFlowInteractor.swift; sourceTree = "<group>"; };
+		DA5D40472209C1300054635F /* HomeSceneFlowDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSceneFlowDelegate.swift; sourceTree = "<group>"; };
+		DA5D407A2209CCA50054635F /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E70E22030A7300CE6E3A /* HomeScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E71122030A7300CE6E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB3E71822030A7400CE6E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,7 +81,6 @@
 		DAB3E73E22030AB000CE6E3A /* HomeSceneFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeSceneFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E74322030AB000CE6E3A /* HomeSceneFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneFrameworkTests.swift; sourceTree = "<group>"; };
 		DAB3E74522030AB000CE6E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAB3E76922030EE900CE6E3A /* RedViewModuleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedViewModuleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E77522030F8300CE6E3A /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB3E76B22030EEE00CE6E3A /* RedViewModuleFramework.framework in Frameworks */,
+				DA5D407C2209CCAF0054635F /* SharedEntities.framework in Frameworks */,
 				DAB3E7772203110F00CE6E3A /* HomeSceneFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB3E76A22030EE900CE6E3A /* RedViewModuleFramework.framework in Frameworks */,
+				DA5D407E2209CCEB0054635F /* SharedEntities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,10 +123,10 @@
 		DAB3E70522030A7300CE6E3A = {
 			isa = PBXGroup;
 			children = (
-				DAB3E71022030A7300CE6E3A /* HomeScene */,
 				DAB3E73722030AB000CE6E3A /* HomeSceneFramework */,
-				DAB3E72522030A7400CE6E3A /* HomeSceneTests */,
+				DAB3E71022030A7300CE6E3A /* HomeScene */,
 				DAB3E74222030AB000CE6E3A /* HomeSceneFrameworkTests */,
+				DAB3E72522030A7400CE6E3A /* HomeSceneTests */,
 				DAB3E70F22030A7300CE6E3A /* Products */,
 				DAB3E75B22030D4800CE6E3A /* Frameworks */,
 			);
@@ -163,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				DAB3E77522030F8300CE6E3A /* HomeScene.swift */,
+				DA5D40472209C1300054635F /* HomeSceneFlowDelegate.swift */,
+				DA5D40462209C1300054635F /* HomeSceneToSecondSceneTapFlowInteractor.swift */,
 				DAB3E73822030AB000CE6E3A /* HomeSceneFramework.h */,
 				DAB3E73922030AB000CE6E3A /* Info.plist */,
 			);
@@ -181,7 +187,7 @@
 		DAB3E75B22030D4800CE6E3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DAB3E76922030EE900CE6E3A /* RedViewModuleFramework.framework */,
+				DA5D407A2209CCA50054635F /* SharedEntities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -374,7 +380,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5D40482209C1300054635F /* HomeSceneToSecondSceneTapFlowInteractor.swift in Sources */,
 				DAB3E77622030F8300CE6E3A /* HomeScene.swift in Sources */,
+				DA5D40492209C1300054635F /* HomeSceneFlowDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

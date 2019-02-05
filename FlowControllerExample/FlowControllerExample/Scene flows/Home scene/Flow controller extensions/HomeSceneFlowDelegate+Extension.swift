@@ -6,8 +6,7 @@
 //  Copyright © 2019 Mark Jarecki. All rights reserved.
 //
 
-// Generic user interactors
-import UserInteractors
+import SharedEntities
 
 // From scene
 import HomeSceneFramework
@@ -25,23 +24,16 @@ extension ApplicationFlowController: HomeSceneFlowDelegate {
 
     // HomeScene tapped with content
     // Triggers pushing the SecondScene view module to the ApplicationFlowController's navigationController stack
-    public func flow(tapFromHomeScene scene: HomeScene, content: Colours) -> Void {
+    public func showSecondScene(fromScene: HomeScene, content: Colour) -> Void {
     
         // Build the `to` scene
         let secondScene = SecondScene()
         
-        // Assign all `to` scene user interactors
-        // One user interactor per flow
-        secondScene.edgeswipeUserInteractor = SecondSceneToHomeSceneEdgeSwipeUserInteractor(viewController: secondScene, flowDelegate: self){ viewController, flowDelegate in
-            
-            guard let secondScene = viewController as? SecondScene else { return }
-        
-            flowDelegate.flow(edgeswipeFromSecondScene: secondScene, content: Colours(name: secondScene.view.backgroundColor!.description) )
-        
-        }
+        // Assign all `to` scene flow interactors
+        secondScene.edgeswipeFlowInteractor = SecondSceneToHomeSceneEdgeSwipeFlowInteractor(viewController: secondScene, flowDelegate: self)
         
         // Add the `to` to the stack - with built-in animation
-        navigationController.delegate = scene.tapUserInteractor
+        navigationController.delegate = nil
         
         navigationController.pushViewController(secondScene, animated: true)
         
