@@ -12,6 +12,7 @@
 		DA5D407C2209CCAF0054635F /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D407A2209CCA50054635F /* SharedEntities.framework */; };
 		DA5D407D2209CCAF0054635F /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D407A2209CCA50054635F /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA5D407E2209CCEB0054635F /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D407A2209CCA50054635F /* SharedEntities.framework */; };
+		DA8F76622209DF8C004D3ADF /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F76612209DF8C004D3ADF /* UIColor+extension.swift */; };
 		DAB3E71222030A7300CE6E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3E71122030A7300CE6E3A /* AppDelegate.swift */; };
 		DAB3E71922030A7400CE6E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB3E71822030A7400CE6E3A /* Assets.xcassets */; };
 		DAB3E71C22030A7400CE6E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB3E71A22030A7400CE6E3A /* LaunchScreen.storyboard */; };
@@ -67,6 +68,7 @@
 		DA5D40462209C1300054635F /* HomeSceneToSecondSceneTapFlowInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSceneToSecondSceneTapFlowInteractor.swift; sourceTree = "<group>"; };
 		DA5D40472209C1300054635F /* HomeSceneFlowDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSceneFlowDelegate.swift; sourceTree = "<group>"; };
 		DA5D407A2209CCA50054635F /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8F76612209DF8C004D3ADF /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		DAB3E70E22030A7300CE6E3A /* HomeScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB3E71122030A7300CE6E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB3E71822030A7400CE6E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				DAB3E77522030F8300CE6E3A /* HomeScene.swift */,
 				DA5D40472209C1300054635F /* HomeSceneFlowDelegate.swift */,
 				DA5D40462209C1300054635F /* HomeSceneToSecondSceneTapFlowInteractor.swift */,
+				DA8F76612209DF8C004D3ADF /* UIColor+extension.swift */,
 				DAB3E73822030AB000CE6E3A /* HomeSceneFramework.h */,
 				DAB3E73922030AB000CE6E3A /* Info.plist */,
 			);
@@ -383,6 +386,7 @@
 				DA5D40482209C1300054635F /* HomeSceneToSecondSceneTapFlowInteractor.swift in Sources */,
 				DAB3E77622030F8300CE6E3A /* HomeScene.swift in Sources */,
 				DA5D40492209C1300054635F /* HomeSceneFlowDelegate.swift in Sources */,
+				DA8F76622209DF8C004D3ADF /* UIColor+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

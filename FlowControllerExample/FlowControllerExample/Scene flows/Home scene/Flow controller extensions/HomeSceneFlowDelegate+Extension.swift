@@ -32,6 +32,8 @@ extension ApplicationFlowController: HomeSceneFlowDelegate {
         // Assign all `to` scene flow interactors
         secondScene.edgeswipeFlowInteractor = SecondSceneToHomeSceneEdgeSwipeFlowInteractor(viewController: secondScene, flowDelegate: self)
         
+        secondScene.viewModel = content
+        
         // Add the `to` to the stack - with built-in animation
         navigationController.delegate = nil
         

@@ -51,7 +51,7 @@ public class HomeSceneToSecondSceneTapFlowInteractor: NSObject {
             
             guard let homeScene = viewController as? HomeScene else { return }
             
-            flowDelegate.showSecondScene(fromScene: homeScene, content: Colour(name: homeScene.view.backgroundColor!.description)) 
+            flowDelegate.showSecondScene(fromScene: homeScene, content: Colour(name: homeScene.view.backgroundColor!.htmlRGBColor)) 
             
         }
         
