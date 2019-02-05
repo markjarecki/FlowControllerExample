@@ -20,11 +20,11 @@ import SecondSceneFramework
  
 */
 
-extension ApplicationFlowController: HomeSceneFlowDelegate {
+extension HomeSceneFlowDelegate where Self: FlowController, Self: SecondSceneFlowDelegate {
 
     // HomeScene tapped with content
     // Triggers pushing the SecondScene view module to the ApplicationFlowController's navigationController stack
-    public func showSecondScene(fromScene: HomeScene, content: Colour) -> Void {
+    func showSecondScene(fromScene: HomeScene, content: Colour) -> Void {
     
         // Build the `to` scene
         let secondScene = SecondScene()

@@ -90,7 +90,6 @@ open class SecondScene: UIViewController {
         hintLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
         hintLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40).isActive = true
 
-        
     }
     
     // MARK: Flow interactors

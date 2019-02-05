@@ -23,7 +23,12 @@ import HomeSceneFramework
  
 */
 
-class ApplicationFlowController {
+import HomeSceneFramework
+import SecondSceneFramework
+
+class ApplicationFlowController: FlowController,
+                                 HomeSceneFlowDelegate,
+                                 SecondSceneFlowDelegate {
 
     // MARK: - Flow Controller conformance
     
