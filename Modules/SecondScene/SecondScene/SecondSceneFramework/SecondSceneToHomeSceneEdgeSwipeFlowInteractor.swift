@@ -59,7 +59,7 @@ public class SecondSceneToHomeSceneEdgeSwipeFlowInteractor: UIPercentDrivenInter
         // Distance travelled
         let distance = translation.x / pan.view!.bounds.width
         
-        switch (pan.state) {
+        switch pan.state {
             
             case .began:
                 

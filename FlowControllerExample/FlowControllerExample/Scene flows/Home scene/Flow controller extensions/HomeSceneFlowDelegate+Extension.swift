@@ -34,9 +34,10 @@ extension HomeSceneFlowDelegate where Self: FlowController, Self: SecondSceneFlo
         
         secondScene.viewModel = content
         
-        // Add the `to` to the stack - with built-in animation
+        // Making delegate nil, will force use of inbuilt animation
         navigationController.delegate = nil
         
+        // Add the `to` to the stack
         navigationController.pushViewController(secondScene, animated: true)
         
     }
