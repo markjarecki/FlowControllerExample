@@ -66,7 +66,7 @@ public class SecondSceneToHomeSceneEdgeSwipeFlowInteractor: UIPercentDrivenInter
                 interactionInProgress = true
                 
                 // Start the interactive transition
-                // Call the flow outlet for this interaction event
+                // Call the flow delegate method for this interaction event
                 flowDelegate.returnToHomeScene(fromScene: secondScene)
             
             case .changed:
