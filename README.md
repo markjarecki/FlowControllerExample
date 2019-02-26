@@ -14,4 +14,4 @@ XCode 10.1
 1. `git clone https://github.com/markjarecki/FlowControllerExample.git`
 2. `cd FlowControllerExample`
 3. Open FlowControllerExample.xcworkspace in Xcode
-4. Built it and run
+4. Build it and run

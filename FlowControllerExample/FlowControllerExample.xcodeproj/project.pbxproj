@@ -14,7 +14,6 @@
 		DA36367822006E4F00424B55 /* FlowControllerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36367722006E4F00424B55 /* FlowControllerExampleTests.swift */; };
 		DA5D404F2209C1E50054635F /* SecondSceneToHomeSceneEdgeSwipe+InteractorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D404E2209C1E50054635F /* SecondSceneToHomeSceneEdgeSwipe+InteractorExtension.swift */; };
 		DA5D40852209CD3B0054635F /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D40842209CD3B0054635F /* SharedEntities.framework */; };
-		DA5D40862209CD420054635F /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D40842209CD3B0054635F /* SharedEntities.framework */; };
 		DA5D40872209CD420054635F /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA5D40842209CD3B0054635F /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA75E3DE2205138600D864E1 /* ApplicationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75E3DD2205138600D864E1 /* ApplicationNavigationController.swift */; };
 		DA8F76642209E42C004D3ADF /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F76632209E42C004D3ADF /* FlowController.swift */; };
@@ -79,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5D40862209CD420054635F /* SharedEntities.framework in Frameworks */,
 				DA5D40852209CD3B0054635F /* SharedEntities.framework in Frameworks */,
 				DAB3E7E32203150000CE6E3A /* SecondSceneFramework.framework in Frameworks */,
 				DAB3E77322030F4900CE6E3A /* HomeSceneFramework.framework in Frameworks */,
